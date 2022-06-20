@@ -74,6 +74,7 @@ public class JunitUserControllerTest {
 		assertNotNull(mockMvc);
 	}
 	@Test
+	@Ignore
 	public void add() throws Exception{
 		// 호출 url, param, 호출방식(get/post)
 		// GET방식으로  http://localhost:8081/ehr/user/doDelete.do?uId=p03
@@ -108,7 +109,7 @@ public class JunitUserControllerTest {
 	}
 	
 	@Test
-	@Ignore
+//	@Ignore
 	public void doDelete() throws Exception{
 		// 호출 url, param, 호출방식(get/post)
 		// GET방식으로  http://localhost:8081/ehr/user/doDelete.do?uId=p03
