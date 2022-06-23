@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pcwk.miss.movie">
+
+    <resultMap type="MovieVO" id="movieResultMap">
+        <id     property="mvNum"       column="mv_num"/>
+        <result property="mvTitle"      column="mv_title"/>
+        <result property="mvDirector"    column="mv_director"/>
+        <result property="mvActor"  column="mv_actor"/>
+        <result property="mvGenre"     column="mv_genre"/>
+        <result property="mvReleased" column="mv_released"/>
+        <result property="mvAgelimit"     column="mv_agelimit"/>
+        <result property="mvSummary"     column="mv_summary"/>
+        <result property="mvNation"     column="mv_nation"/>
+        <result property="mvTime"     column="mv_time"/>
+    </resultMap>
+
+    <!-- 단건등록 : namespace + id = com.pcwk.miss.movie.doSelectOne -->
+    <select id="doSelectOne" parameterType="MovieVO" resultMap="movieResultMap">
+       <![CDATA[ 
+        SELECT mv_num,
+		    mv_title,
+		    mv_director,
+		    mv_actor,
+		    mv_genre,
+		    mv_released,
+		    mv_agelimit,
+		    mv_summary,
+		    mv_nation,
+		    mv_time
+		FROM MOVIE
+		WHERE mv_num = #{mvNum}
+        ]]>                                        
+    </select>
+</mapper>
