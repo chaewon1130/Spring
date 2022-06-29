@@ -1,867 +1,392 @@
-[2022-06-28 09:13:35.384] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
-2. PreparedStatement.setInt(1, 30) returned 
-[2022-06-28 09:13:35.386] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 30(Integer)
-[2022-06-28 09:13:35.387] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
-2. SELECT seq, title, contents, read_cnt as readCnt, div, TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') 
-as regDt, reg_id as regId, TO_CHAR(mod_dt, 'yyyy-mm-dd hh24:mi:ss') as modDt, mod_id as modId 
-FROM pc_board WHERE seq = 30  {executed in 1 ms}
-[2022-06-28 09:13:35.388] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
-2. PreparedStatement.execute() returned true
-[2022-06-28 09:13:35.388] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
-2. ResultSet.new ResultSet returned 
-[2022-06-28 09:13:35.388] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
-2. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@692e028d
-[2022-06-28 09:13:35.388] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
-2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@6629ad09
-[2022-06-28 09:13:35.388] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getType(DelegatingResultSet.java:394)
-2. ResultSet.getType() returned 1003
-[2022-06-28 09:13:35.389] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
-2. ResultSet.isClosed() returned false
-[2022-06-28 09:13:35.389] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
-2. ResultSet.next() returned true
-[2022-06-28 09:13:35.389] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(SEQ) returned 30
-[2022-06-28 09:13:35.389] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(TITLE) returned 제목_30
-[2022-06-28 09:13:35.389] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getClob(DelegatingResultSet.java:568)
-2. ResultSet.getClob(CONTENTS) returned oracle.sql.CLOB@c35af2a
-[2022-06-28 09:13:35.390] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(READCNT) returned 0
-[2022-06-28 09:13:35.390] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.wasNull(DelegatingResultSet.java:210)
-2. ResultSet.wasNull() returned false
-[2022-06-28 09:13:35.390] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(DIV) returned 10
-[2022-06-28 09:13:35.390] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(REGDT) returned 2022-06-28 09:13:39
-[2022-06-28 09:13:35.390] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(REGID) returned 김동호
-[2022-06-28 09:13:35.390] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(MODDT) returned 2022-06-28 09:13:39
-[2022-06-28 09:13:35.391] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(MODID) returned 김동호
-[2022-06-28 09:13:35.391] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
-2. ResultSet.isClosed() returned false
-[2022-06-28 09:13:35.391] INFO  Log4j2SpyLogDelegator.resultSetCollected(Log4j2SpyLogDelegator.java:390) - 
-|----|------|---------|--------|----|--------------------|------|--------------------|------|
-|seq |title |contents |readcnt |div |regdt               |regid |moddt               |modid |
-|----|------|---------|--------|----|--------------------|------|--------------------|------|
-|30  |제목_30 |내용_30    |0       |10  |2022-06-28 09:13:39 |김동호   |2022-06-28 09:13:39 |김동호   |
-|----|------|---------|--------|----|--------------------|------|--------------------|------|
-
-[2022-06-28 09:13:35.392] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
-2. ResultSet.next() returned false
-[2022-06-28 09:13:35.392] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
-[2022-06-28 09:13:35.392] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.close(DelegatingResultSet.java:187)
-2. ResultSet.close() returned void
-[2022-06-28 09:13:35.392] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getMetaData(DelegatingConnection.java:345)
-2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@4dbad37
-[2022-06-28 09:13:35.392] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
-2. PreparedStatement.close() returned 
-[2022-06-28 09:13:35.392] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c18621b]
-[2022-06-28 09:13:35.392] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
-2. Connection.isClosed() returned false
-[2022-06-28 09:13:35.393] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
-2. Connection.getAutoCommit() returned true
-[2022-06-28 09:13:35.393] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
-2. Connection.clearWarnings() returned 
-[2022-06-28 09:13:35.393] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
-2. Connection.getAutoCommit() returned true
-[2022-06-28 09:13:35.393] DEBUG BoardDaoImpl.doSelectOne(BoardDaoImpl.java:145) - ============================
-[2022-06-28 09:13:35.393] DEBUG BoardDaoImpl.doSelectOne(BoardDaoImpl.java:146) - outVO=BoardVO [seq=30, title=제목_30, contents=내용_30, readCnt=0, div=10, regDt=2022-06-28 09:13:39, regId=김동호, modDt=2022-06-28 09:13:39, modId=김동호, toString()=DTO [num=0, totalCnt=0]]
-[2022-06-28 09:13:35.393] DEBUG BoardDaoImpl.doSelectOne(BoardDaoImpl.java:147) - ============================
-[2022-06-28 09:13:35.393] DEBUG BoardDaoImpl.updateReadCnt(BoardDaoImpl.java:157) - ============================
-[2022-06-28 09:13:35.393] DEBUG BoardDaoImpl.updateReadCnt(BoardDaoImpl.java:158) - param:BoardVO [seq=30, title=제목_30, contents=내용_30, readCnt=0, div=10, regDt=날짜_사용안함, regId=김동호, modDt=날짜_사용안함, modId=김동호, toString()=DTO [num=0, totalCnt=0]]
-[2022-06-28 09:13:35.393] DEBUG BoardDaoImpl.updateReadCnt(BoardDaoImpl.java:159) - statement:com.pcwk.ehr.board.updateReadCnt
-[2022-06-28 09:13:35.393] DEBUG BoardDaoImpl.updateReadCnt(BoardDaoImpl.java:160) - ============================
-[2022-06-28 09:13:35.393] DEBUG Logger.debug(Logger.java:49) - Creating a new SqlSession
-[2022-06-28 09:13:35.393] DEBUG Logger.debug(Logger.java:49) - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fde0371] was not registered for synchronization because synchronization is not active
-[2022-06-28 09:13:35.393] DEBUG DataSourceUtils.doGetConnection(DataSourceUtils.java:116) - Fetching JDBC Connection from DataSource
-[2022-06-28 09:13:35.394] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
-2. Connection.getAutoCommit() returned true
-[2022-06-28 09:13:35.394] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
-2. Connection.getAutoCommit() returned true
-[2022-06-28 09:13:35.394] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
-2. Connection.isClosed() returned false
-[2022-06-28 09:13:35.394] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
-2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@4dbad37
-[2022-06-28 09:13:35.394] DEBUG Logger.debug(Logger.java:49) - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
-[2022-06-28 09:13:35.394] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: UPDATE pc_board SET read_cnt = NVL(read_cnt, 0) + 1 WHERE seq = ?
-[2022-06-28 09:13:35.394] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
-2. PreparedStatement.new PreparedStatement returned 
-[2022-06-28 09:13:35.394] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
-2. Connection.prepareStatement(UPDATE pc_board
-		SET read_cnt = NVL(read_cnt, 0) + 1
-		WHERE seq = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@70c0a3d5
-[2022-06-28 09:13:35.395] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
-2. PreparedStatement.setInt(1, 30) returned 
-[2022-06-28 09:13:35.395] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 30(Integer)
-[2022-06-28 09:13:35.396] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
-2. UPDATE pc_board SET read_cnt = NVL(read_cnt, 0) + 1 WHERE seq = 30  {executed in 1 ms}
-[2022-06-28 09:13:35.397] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
-2. PreparedStatement.execute() returned false
-[2022-06-28 09:13:35.397] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getUpdateCount(DelegatingStatement.java:267)
-2. PreparedStatement.getUpdateCount() returned 1
-[2022-06-28 09:13:35.397] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
-[2022-06-28 09:13:35.397] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
-2. PreparedStatement.close() returned 
-[2022-06-28 09:13:35.397] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fde0371]
-[2022-06-28 09:13:35.397] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
-2. Connection.isClosed() returned false
-[2022-06-28 09:13:35.397] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
-2. Connection.getAutoCommit() returned true
-[2022-06-28 09:13:35.397] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
-2. Connection.clearWarnings() returned 
-[2022-06-28 09:13:35.398] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
-2. Connection.getAutoCommit() returned true
-[2022-06-28 09:13:35.398] DEBUG BoardDaoImpl.updateReadCnt(BoardDaoImpl.java:163) - flag : 1
-[2022-06-28 09:13:35.398] DEBUG BoardDaoImpl.doSelectOne(BoardDaoImpl.java:139) - ============================
-[2022-06-28 09:13:35.398] DEBUG BoardDaoImpl.doSelectOne(BoardDaoImpl.java:140) - param:BoardVO [seq=30, title=제목_30, contents=내용_30, readCnt=0, div=10, regDt=날짜_사용안함, regId=김동호, modDt=날짜_사용안함, modId=김동호, toString()=DTO [num=0, totalCnt=0]]
-[2022-06-28 09:13:35.398] DEBUG BoardDaoImpl.doSelectOne(BoardDaoImpl.java:141) - statement:com.pcwk.ehr.board.doSelectOne
-[2022-06-28 09:13:35.398] DEBUG BoardDaoImpl.doSelectOne(BoardDaoImpl.java:142) - ============================
-[2022-06-28 09:13:35.398] DEBUG Logger.debug(Logger.java:49) - Creating a new SqlSession
-[2022-06-28 09:13:35.398] DEBUG Logger.debug(Logger.java:49) - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c8e67b9] was not registered for synchronization because synchronization is not active
-[2022-06-28 09:13:35.398] DEBUG DataSourceUtils.doGetConnection(DataSourceUtils.java:116) - Fetching JDBC Connection from DataSource
-[2022-06-28 09:13:35.398] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
-2. Connection.getAutoCommit() returned true
-[2022-06-28 09:13:35.398] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
-2. Connection.getAutoCommit() returned true
-[2022-06-28 09:13:35.398] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
-2. Connection.isClosed() returned false
-[2022-06-28 09:13:35.399] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
-2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@4dbad37
-[2022-06-28 09:13:35.399] DEBUG Logger.debug(Logger.java:49) - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
-[2022-06-28 09:13:35.399] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: SELECT seq, title, contents, read_cnt as readCnt, div, TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') as regDt, reg_id as regId, TO_CHAR(mod_dt, 'yyyy-mm-dd hh24:mi:ss') as modDt, mod_id as modId FROM pc_board WHERE seq = ?
-[2022-06-28 09:13:35.399] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
-2. PreparedStatement.new PreparedStatement returned 
-[2022-06-28 09:13:35.399] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
-2. Connection.prepareStatement(SELECT seq,
-            title,
-            contents,
-            read_cnt as readCnt,
-            div,
-            TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') as regDt,
-            reg_id as regId,
-            TO_CHAR(mod_dt, 'yyyy-mm-dd hh24:mi:ss') as modDt,
-            mod_id as modId
-        FROM pc_board
-        WHERE seq = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@260a3a5e
-[2022-06-28 09:13:35.399] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
-2. PreparedStatement.setInt(1, 30) returned 
-[2022-06-28 09:13:35.400] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 30(Integer)
-[2022-06-28 09:13:35.401] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
-2. SELECT seq, title, contents, read_cnt as readCnt, div, TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') 
-as regDt, reg_id as regId, TO_CHAR(mod_dt, 'yyyy-mm-dd hh24:mi:ss') as modDt, mod_id as modId 
-FROM pc_board WHERE seq = 30  {executed in 1 ms}
-[2022-06-28 09:13:35.401] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
-2. PreparedStatement.execute() returned true
-[2022-06-28 09:13:35.401] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
-2. ResultSet.new ResultSet returned 
-[2022-06-28 09:13:35.401] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
-2. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@49206065
-[2022-06-28 09:13:35.402] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
-2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@3c0bbc9f
-[2022-06-28 09:13:35.402] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getType(DelegatingResultSet.java:394)
-2. ResultSet.getType() returned 1003
-[2022-06-28 09:13:35.402] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
-2. ResultSet.isClosed() returned false
-[2022-06-28 09:13:35.402] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
-2. ResultSet.next() returned true
-[2022-06-28 09:13:35.402] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(SEQ) returned 30
-[2022-06-28 09:13:35.403] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(TITLE) returned 제목_30
-[2022-06-28 09:13:35.403] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getClob(DelegatingResultSet.java:568)
-2. ResultSet.getClob(CONTENTS) returned oracle.sql.CLOB@608bc8f8
-[2022-06-28 09:13:35.403] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(READCNT) returned 1
-[2022-06-28 09:13:35.404] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(DIV) returned 10
-[2022-06-28 09:13:35.404] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(REGDT) returned 2022-06-28 09:13:39
-[2022-06-28 09:13:35.404] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(REGID) returned 김동호
-[2022-06-28 09:13:35.404] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(MODDT) returned 2022-06-28 09:13:39
-[2022-06-28 09:13:35.404] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(MODID) returned 김동호
-[2022-06-28 09:13:35.405] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
-2. ResultSet.isClosed() returned false
-[2022-06-28 09:13:35.405] INFO  Log4j2SpyLogDelegator.resultSetCollected(Log4j2SpyLogDelegator.java:390) - 
-|----|------|---------|--------|----|--------------------|------|--------------------|------|
-|seq |title |contents |readcnt |div |regdt               |regid |moddt               |modid |
-|----|------|---------|--------|----|--------------------|------|--------------------|------|
-|30  |제목_30 |내용_30    |1       |10  |2022-06-28 09:13:39 |김동호   |2022-06-28 09:13:39 |김동호   |
-|----|------|---------|--------|----|--------------------|------|--------------------|------|
-
-[2022-06-28 09:13:35.405] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
-2. ResultSet.next() returned false
-[2022-06-28 09:13:35.406] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
-[2022-06-28 09:13:35.406] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.close(DelegatingResultSet.java:187)
-2. ResultSet.close() returned void
-[2022-06-28 09:13:35.406] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getMetaData(DelegatingConnection.java:345)
-2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@4dbad37
-[2022-06-28 09:13:35.406] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
-2. PreparedStatement.close() returned 
-[2022-06-28 09:13:35.406] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c8e67b9]
-[2022-06-28 09:13:35.406] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
-2. Connection.isClosed() returned false
-[2022-06-28 09:13:35.406] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
-2. Connection.getAutoCommit() returned true
-[2022-06-28 09:13:35.407] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
-2. Connection.clearWarnings() returned 
-[2022-06-28 09:13:35.407] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
-2. Connection.getAutoCommit() returned true
-[2022-06-28 09:13:35.407] DEBUG BoardDaoImpl.doSelectOne(BoardDaoImpl.java:145) - ============================
-[2022-06-28 09:13:35.407] DEBUG BoardDaoImpl.doSelectOne(BoardDaoImpl.java:146) - outVO=BoardVO [seq=30, title=제목_30, contents=내용_30, readCnt=1, div=10, regDt=2022-06-28 09:13:39, regId=김동호, modDt=2022-06-28 09:13:39, modId=김동호, toString()=DTO [num=0, totalCnt=0]]
-[2022-06-28 09:13:35.407] DEBUG BoardDaoImpl.doSelectOne(BoardDaoImpl.java:147) - ============================
-[2022-06-28 09:13:35.407] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [1212772528] from cache with key [[MergedContextConfiguration@1f59a598 testClass = JUnitBoardDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
-[2022-06-28 09:13:35.407] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@6f012914 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 22, missCount = 1]
-[2022-06-28 09:13:35.407] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [1212772528] from cache with key [[MergedContextConfiguration@1f59a598 testClass = JUnitBoardDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
-[2022-06-28 09:13:35.407] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@6f012914 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 23, missCount = 1]
-[2022-06-28 09:13:35.408] DEBUG AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestMethod(AbstractDirtiesContextTestExecutionListener.java:108) - After test method: context [DefaultTestContext@7ee8290b testClass = JUnitBoardDaoTest, testInstance = com.pcwk.ehr.board.JUnitBoardDaoTest@42b28ff1, testMethod = updateReadCnt@JUnitBoardDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1f59a598 testClass = JUnitBoardDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
-[2022-06-28 09:13:35.408] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [1212772528] from cache with key [[MergedContextConfiguration@1f59a598 testClass = JUnitBoardDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
-[2022-06-28 09:13:35.408] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@6f012914 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 24, missCount = 1]
-[2022-06-28 09:13:35.409] DEBUG AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestClass(AbstractDirtiesContextTestExecutionListener.java:143) - After test class: context [DefaultTestContext@7ee8290b testClass = JUnitBoardDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1f59a598 testClass = JUnitBoardDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null].
-[2022-06-28 09:13:35.410] DEBUG AbstractApplicationContext.doClose(AbstractApplicationContext.java:1049) - Closing org.springframework.context.support.GenericApplicationContext@484970b0, started on Tue Jun 28 09:13:33 KST 2022
-[2022-06-28 09:16:12.851] DEBUG SpringJUnit4ClassRunner.<init>(SpringJUnit4ClassRunner.java:139) - SpringJUnit4ClassRunner constructor called with [class com.pcwk.ehr.board.JUnitBoardController]
-[2022-06-28 09:16:12.857] DEBUG BootstrapUtils.createCacheAwareContextLoaderDelegate(BootstrapUtils.java:108) - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-[2022-06-28 09:16:12.862] DEBUG BootstrapUtils.createBootstrapContext(BootstrapUtils.java:88) - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-[2022-06-28 09:16:12.879] DEBUG BootstrapUtils.resolveTestContextBootstrapper(BootstrapUtils.java:143) - Instantiating TestContextBootstrapper for test class [com.pcwk.ehr.board.JUnitBoardController] from class [org.springframework.test.context.web.WebTestContextBootstrapper]
-[2022-06-28 09:16:12.890] DEBUG AbstractDelegatingSmartContextLoader.delegateProcessing(AbstractDelegatingSmartContextLoader.java:263) - Delegating to GenericXmlWebContextLoader to process context configuration [ContextConfigurationAttributes@3c19aaa5 declaringClass = 'com.pcwk.ehr.board.JUnitBoardController', classes = '{}', locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
-[2022-06-28 09:16:12.912] DEBUG ActiveProfilesUtils.resolveActiveProfiles(ActiveProfilesUtils.java:79) - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.pcwk.ehr.board.JUnitBoardController]
-[2022-06-28 09:16:12.913] DEBUG AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:124) - @TestExecutionListeners is not present for class [com.pcwk.ehr.board.JUnitBoardController]: using defaults.
-[2022-06-28 09:16:12.913] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-[2022-06-28 09:16:12.923] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6200f9cb, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2002fc1d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@69453e37, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6f4a47c7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ae13544, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3d34d211, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7dc0f706, org.springframework.test.context.event.EventPublishingTestExecutionListener@4009e306]
-[2022-06-28 09:16:12.924] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.board.JUnitBoardController]
-[2022-06-28 09:16:12.925] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.board.JUnitBoardController]
-[2022-06-28 09:16:12.926] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.board.JUnitBoardController]
-[2022-06-28 09:16:12.926] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.board.JUnitBoardController]
-[2022-06-28 09:16:12.926] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.board.JUnitBoardController]
-[2022-06-28 09:16:12.926] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.board.JUnitBoardController]
-[2022-06-28 09:16:12.932] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.board.JUnitBoardController]
-[2022-06-28 09:16:12.932] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.board.JUnitBoardController]
-[2022-06-28 09:16:12.932] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.board.JUnitBoardController]
-[2022-06-28 09:16:12.933] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.board.JUnitBoardController]
-[2022-06-28 09:16:12.933] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.board.JUnitBoardController]
-[2022-06-28 09:16:12.933] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.board.JUnitBoardController]
-[2022-06-28 09:16:12.936] DEBUG AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestClass(AbstractDirtiesContextTestExecutionListener.java:143) - Before test class: context [DefaultTestContext@49e5f737 testClass = JUnitBoardController, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5c671d7f testClass = JUnitBoardController, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
-[2022-06-28 09:16:12.937] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.board.JUnitBoardController]
-[2022-06-28 09:16:12.937] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.board.JUnitBoardController]
-[2022-06-28 09:16:12.938] DEBUG AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:273) - Delegating to GenericXmlWebContextLoader to load context from [WebMergedContextConfiguration@5c671d7f testClass = JUnitBoardController, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]].
-[2022-06-28 09:16:12.938] DEBUG AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:111) - Loading WebApplicationContext for merged context configuration [WebMergedContextConfiguration@5c671d7f testClass = JUnitBoardController, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]].
-[2022-06-28 09:16:13.070] DEBUG XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:393) - Loaded 11 bean definitions from URL [file:src/main/webapp/WEB-INF/spring/root-context.xml]
-[2022-06-28 09:16:13.148] DEBUG ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:435) - Identified candidate component class: file [C:\DCOM_20220127\04_SPRING\workspace\SW_SH23_01\target\classes\com\pcwk\ehr\board\controller\BoardController.class]
-[2022-06-28 09:16:13.149] DEBUG ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:435) - Identified candidate component class: file [C:\DCOM_20220127\04_SPRING\workspace\SW_SH23_01\target\classes\com\pcwk\ehr\board\dao\BoardDaoImpl.class]
-[2022-06-28 09:16:13.151] DEBUG ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:435) - Identified candidate component class: file [C:\DCOM_20220127\04_SPRING\workspace\SW_SH23_01\target\classes\com\pcwk\ehr\board\service\BoardServiceImpl.class]
-[2022-06-28 09:16:13.151] DEBUG ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:435) - Identified candidate component class: file [C:\DCOM_20220127\04_SPRING\workspace\SW_SH23_01\target\classes\com\pcwk\ehr\boot\controller\BootController.class]
-[2022-06-28 09:16:13.152] DEBUG ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:435) - Identified candidate component class: file [C:\DCOM_20220127\04_SPRING\workspace\SW_SH23_01\target\classes\com\pcwk\ehr\login\controller\LoginController.class]
-[2022-06-28 09:16:13.153] DEBUG ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:435) - Identified candidate component class: file [C:\DCOM_20220127\04_SPRING\workspace\SW_SH23_01\target\classes\com\pcwk\ehr\main\controller\MainController.class]
-[2022-06-28 09:16:13.153] DEBUG ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:435) - Identified candidate component class: file [C:\DCOM_20220127\04_SPRING\workspace\SW_SH23_01\target\classes\com\pcwk\ehr\user\controller\UserController.class]
-[2022-06-28 09:16:13.154] DEBUG ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:435) - Identified candidate component class: file [C:\DCOM_20220127\04_SPRING\workspace\SW_SH23_01\target\classes\com\pcwk\ehr\user\dao\UserDaoImpl.class]
-[2022-06-28 09:16:13.154] DEBUG ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:435) - Identified candidate component class: file [C:\DCOM_20220127\04_SPRING\workspace\SW_SH23_01\target\classes\com\pcwk\ehr\user\service\UserServiceImpl.class]
-[2022-06-28 09:16:13.166] DEBUG XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:393) - Loaded 39 bean definitions from URL [file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml]
-[2022-06-28 09:16:13.196] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-[2022-06-28 09:16:13.276] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
-[2022-06-28 09:16:13.298] DEBUG PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
-[2022-06-28 09:16:13.298] DEBUG PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
-[2022-06-28 09:16:13.298] DEBUG PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
-[2022-06-28 09:16:13.298] DEBUG PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
-[2022-06-28 09:16:13.298] DEBUG PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) - Found key 'jdbc.maxActive' in PropertySource 'localProperties' with value of type String
-[2022-06-28 09:16:13.298] DEBUG PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) - Found key 'jdbc.maxIdle' in PropertySource 'localProperties' with value of type String
-[2022-06-28 09:16:13.299] DEBUG PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) - Found key 'jdbc.maxWait' in PropertySource 'localProperties' with value of type String
-[2022-06-28 09:16:13.299] DEBUG PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) - Found key 'jdbc.removeAbandoned' in PropertySource 'localProperties' with value of type String
-[2022-06-28 09:16:13.299] DEBUG PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) - Found key 'jdbc.removeAbandonedTimeout' in PropertySource 'localProperties' with value of type String
-[2022-06-28 09:16:13.300] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
-[2022-06-28 09:16:13.302] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-[2022-06-28 09:16:13.306] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-[2022-06-28 09:16:13.307] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-[2022-06-28 09:16:13.310] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
-[2022-06-28 09:16:13.328] DEBUG UiApplicationContextUtils.initThemeSource(UiApplicationContextUtils.java:85) - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@78383390]
-[2022-06-28 09:16:13.329] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'sqlSessionTemplate'
-[2022-06-28 09:16:13.330] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
-[2022-06-28 09:16:13.348] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'sqlSessionFactoryBean'
-[2022-06-28 09:16:13.392] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
-[2022-06-28 09:16:13.398] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - log4jdbc-logj2 properties initialization...
-[2022-06-28 09:16:13.399] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - Using logger: null
-[2022-06-28 09:16:13.399] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.debug.stack.prefix is not defined
-[2022-06-28 09:16:13.399] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.sqltiming.warn.threshold is not defined
-[2022-06-28 09:16:13.399] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.sqltiming.error.threshold is not defined
-[2022-06-28 09:16:13.399] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
-[2022-06-28 09:16:13.400] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
-[2022-06-28 09:16:13.400] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
-[2022-06-28 09:16:13.400] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.statement.warn is not defined (using default value false)
-[2022-06-28 09:16:13.400] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.select is not defined (using default value true)
-[2022-06-28 09:16:13.401] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.insert is not defined (using default value true)
-[2022-06-28 09:16:13.401] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.update is not defined (using default value true)
-[2022-06-28 09:16:13.401] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.delete is not defined (using default value true)
-[2022-06-28 09:16:13.401] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.create is not defined (using default value true)
-[2022-06-28 09:16:13.401] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
-[2022-06-28 09:16:13.401] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
-[2022-06-28 09:16:13.402] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.drivers is not defined
-[2022-06-28 09:16:13.402] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.trim.sql is not defined (using default value true)
-[2022-06-28 09:16:13.402] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
-[2022-06-28 09:16:13.402] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
-[2022-06-28 09:16:13.402] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - log4jdbc-logj2 properties initialization done.
-[2022-06-28 09:16:13.402] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - DriverSpy intialization...
-[2022-06-28 09:16:13.429] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) -   FOUND DRIVER oracle.jdbc.OracleDriver
-[2022-06-28 09:16:13.429] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
-[2022-06-28 09:16:13.430] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - DriverSpy intialization done.
-[2022-06-28 09:16:13.592] DEBUG LogFactory.setImplementation(LogFactory.java:105) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
-[2022-06-28 09:16:13.692] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dummyMailSender'
-[2022-06-28 09:16:13.698] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mailSenderImpl'
-[2022-06-28 09:16:13.721] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'transactionManager'
-[2022-06-28 09:16:13.744] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'txAdvice'
-[2022-06-28 09:16:13.764] DEBUG NameMatchTransactionAttributeSource.addTransactionalMethod(NameMatchTransactionAttributeSource.java:102) - Adding transactional method [do*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
-[2022-06-28 09:16:13.765] DEBUG NameMatchTransactionAttributeSource.addTransactionalMethod(NameMatchTransactionAttributeSource.java:102) - Adding transactional method [up*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
-[2022-06-28 09:16:13.768] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
-[2022-06-28 09:16:13.781] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
-[2022-06-28 09:16:13.808] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mvcCorsConfigurations'
-[2022-06-28 09:16:13.824] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
-[2022-06-28 09:16:13.825] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
-[2022-06-28 09:16:13.877] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
-[2022-06-28 09:16:13.902] DEBUG AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:295) - 
-	c.p.e.b.c.BoardController:
-	{GET [/board/doRetrieve.do], produces [application/json;charset=UTF-8]}: doRetrieve(SearchVO)
-	{GET [/board/boardView.do]}: boardView(Model,SearchVO)
-[2022-06-28 09:16:13.905] DEBUG AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:295) - 
-	c.p.e.b.c.BootController:
-	{GET [/boot/bootReg.do]}: bootReg()
-	{GET [/boot/bootList.do]}: bootList()
-	{GET [/boot/tmpMenu.do]}: tmpMenu()
-[2022-06-28 09:16:13.907] DEBUG AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:295) - 
-	c.p.e.l.c.LoginController:
-	{POST [/login/doLogin.do], produces [application/json;charset=UTF-8]}: doLogin(UserVO,HttpSession)
-	{GET [/login/loginView.do]}: loginView()
-[2022-06-28 09:16:13.911] DEBUG AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:295) - 
-	c.p.e.m.c.MainController:
-	{GET [/main/mainView.do]}: mainView()
-[2022-06-28 09:16:13.918] DEBUG AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:295) - 
-	c.p.e.u.c.UserController:
-	{POST [/user/add.do], produces [application/json;charset=UTF-8]}: add(UserVO)
-	{ [/user/doRetrieve.do], produces [application/json;charset=UTF-8]}: doRetrieve(SearchVO)
-	{POST [/user/doUpdate.do], produces [application/json;charset=UTF-8]}: doUpdate(UserVO)
-	{GET [/user/doDelete.do], produces [application/json;charset=UTF-8]}: doDelete(HttpServletRequest,Model,UserVO)
-	{GET [/user/doSelectOne.do], produces [application/json;charset=UTF-8]}: doSelectOne(UserVO)
-	{GET [/user/userView.do]}: userView(Model,SearchVO)
-	{GET [/user/idCheck.do], produces [application/json;charset=UTF-8]}: idCheck(UserVO)
-[2022-06-28 09:16:13.930] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
-[2022-06-28 09:16:14.055] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mvcUriComponentsContributor'
-[2022-06-28 09:16:14.065] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
-[2022-06-28 09:16:14.076] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
-[2022-06-28 09:16:14.078] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
-[2022-06-28 09:16:14.083] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
-[2022-06-28 09:16:14.090] DEBUG AbstractDetectingUrlHandlerMapping.detectHandlers(AbstractDetectingUrlHandlerMapping.java:86) - 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping' {}
-[2022-06-28 09:16:14.091] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
-[2022-06-28 09:16:14.091] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
-[2022-06-28 09:16:14.092] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'localeResolver'
-[2022-06-28 09:16:14.092] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'themeResolver'
-[2022-06-28 09:16:14.093] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'viewNameTranslator'
-[2022-06-28 09:16:14.093] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'flashMapManager'
-[2022-06-28 09:16:14.096] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mvcResourceUrlProvider'
-[2022-06-28 09:16:14.098] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mvcPathMatcher'
-[2022-06-28 09:16:14.101] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mvcUrlPathHelper'
-[2022-06-28 09:16:14.102] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
-[2022-06-28 09:16:14.111] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
-[2022-06-28 09:16:14.115] DEBUG SimpleUrlHandlerMapping.logMappings(SimpleUrlHandlerMapping.java:177) - 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0' {/resources/**=ResourceHttpRequestHandler [ServletContext [/resources/]]}
-[2022-06-28 09:16:14.115] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
-[2022-06-28 09:16:14.125] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'boardController'
-[2022-06-28 09:16:14.130] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'boardService'
-[2022-06-28 09:16:14.130] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'boardDao'
-[2022-06-28 09:16:14.139] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'bootController'
-[2022-06-28 09:16:14.140] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'loginController'
-[2022-06-28 09:16:14.140] DEBUG LoginController.<init>(LoginController.java:49) - ========================
-[2022-06-28 09:16:14.140] DEBUG LoginController.<init>(LoginController.java:50) - =LoginController()=
-[2022-06-28 09:16:14.140] DEBUG LoginController.<init>(LoginController.java:51) - ========================
-[2022-06-28 09:16:14.141] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userService'
-[2022-06-28 09:16:14.144] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
-[2022-06-28 09:16:14.150] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mainController'
-[2022-06-28 09:16:14.150] DEBUG MainController.<init>(MainController.java:37) - ========================
-[2022-06-28 09:16:14.150] DEBUG MainController.<init>(MainController.java:38) - =MainController()=
-[2022-06-28 09:16:14.151] DEBUG MainController.<init>(MainController.java:39) - ========================
-[2022-06-28 09:16:14.151] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userController'
-[2022-06-28 09:16:14.162] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:126) - Storing ApplicationContext [90767234] in cache under key [[WebMergedContextConfiguration@5c671d7f testClass = JUnitBoardController, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
-[2022-06-28 09:16:14.162] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@5328a9c1 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
-[2022-06-28 09:16:14.163] DEBUG ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test context [DefaultTestContext@49e5f737 testClass = JUnitBoardController, testInstance = com.pcwk.ehr.board.JUnitBoardController@715fb77, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5c671d7f testClass = JUnitBoardController, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]].
-[2022-06-28 09:16:14.172] DEBUG DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:81) - Performing dependency injection for test context [[DefaultTestContext@49e5f737 testClass = JUnitBoardController, testInstance = com.pcwk.ehr.board.JUnitBoardController@715fb77, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5c671d7f testClass = JUnitBoardController, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
-[2022-06-28 09:16:14.173] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [90767234] from cache with key [[WebMergedContextConfiguration@5c671d7f testClass = JUnitBoardController, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
-[2022-06-28 09:16:14.173] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@5328a9c1 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
-[2022-06-28 09:16:14.176] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [90767234] from cache with key [[WebMergedContextConfiguration@5c671d7f testClass = JUnitBoardController, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
-[2022-06-28 09:16:14.176] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@5328a9c1 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
-[2022-06-28 09:16:14.179] DEBUG AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestMethod(AbstractDirtiesContextTestExecutionListener.java:108) - Before test method: context [DefaultTestContext@49e5f737 testClass = JUnitBoardController, testInstance = com.pcwk.ehr.board.JUnitBoardController@715fb77, testMethod = doRetrieve@JUnitBoardController, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5c671d7f testClass = JUnitBoardController, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
-[2022-06-28 09:16:14.186] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [90767234] from cache with key [[WebMergedContextConfiguration@5c671d7f testClass = JUnitBoardController, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
-[2022-06-28 09:16:14.186] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@5328a9c1 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
-[2022-06-28 09:16:14.187] DEBUG JUnitBoardController.setUp(JUnitBoardController.java:78) - ========================
-[2022-06-28 09:16:14.187] DEBUG JUnitBoardController.setUp(JUnitBoardController.java:79) - =0.setUp()=
-[2022-06-28 09:16:14.187] DEBUG JUnitBoardController.setUp(JUnitBoardController.java:80) - ========================
-[2022-06-28 09:16:14.196] INFO  MockServletContext.log(MockServletContext.java:455) - Initializing Spring TestDispatcherServlet ''
-[2022-06-28 09:16:14.196] INFO  FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet ''
-[2022-06-28 09:16:14.197] DEBUG DispatcherServlet.initLocaleResolver(DispatcherServlet.java:544) - Detected AcceptHeaderLocaleResolver
-[2022-06-28 09:16:14.197] DEBUG DispatcherServlet.initThemeResolver(DispatcherServlet.java:569) - Detected FixedThemeResolver
-[2022-06-28 09:16:14.197] DEBUG DispatcherServlet.initRequestToViewNameTranslator(DispatcherServlet.java:719) - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2687f956
-[2022-06-28 09:16:14.197] DEBUG DispatcherServlet.initFlashMapManager(DispatcherServlet.java:783) - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1ded7b14
-[2022-06-28 09:16:14.197] DEBUG FrameworkServlet.initServletBean(FrameworkServlet.java:542) - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-[2022-06-28 09:16:14.197] INFO  FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 1 ms
-[2022-06-28 09:16:14.198] DEBUG JUnitBoardController.setUp(JUnitBoardController.java:88) - mockMvc : org.springframework.test.web.servlet.MockMvc@6a4d7f76
-[2022-06-28 09:16:14.198] DEBUG JUnitBoardController.setUp(JUnitBoardController.java:89) - boardDao : com.pcwk.ehr.board.dao.BoardDaoImpl@10ec523c
-[2022-06-28 09:16:14.200] DEBUG JUnitBoardController.setUp(JUnitBoardController.java:90) - webApplicationContext : org.springframework.web.context.support.GenericWebApplicationContext@568ff82, started on Tue Jun 28 09:16:13 KST 2022
-[2022-06-28 09:16:14.201] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [90767234] from cache with key [[WebMergedContextConfiguration@5c671d7f testClass = JUnitBoardController, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
-[2022-06-28 09:16:14.201] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@5328a9c1 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
-[2022-06-28 09:16:14.218] DEBUG LogFormatUtils.traceDebug(LogFormatUtils.java:108) - GET "/board/doRetrieve.do", parameters={masked}
-[2022-06-28 09:16:14.237] DEBUG BoardController.doRetrieve(BoardController.java:60) - ====================
-[2022-06-28 09:16:14.237] DEBUG BoardController.doRetrieve(BoardController.java:61) - =doRetrieve()=
-[2022-06-28 09:16:14.237] DEBUG BoardController.doRetrieve(BoardController.java:62) - =inVO=SearchVO [pageSize=10, pageNum=1, searchDiv=, searchWord=, div=10, toString()=DTO [num=0, totalCnt=0]]
-[2022-06-28 09:16:14.237] DEBUG BoardController.doRetrieve(BoardController.java:63) - ====================
-[2022-06-28 09:16:14.237] DEBUG BoardController.doRetrieve(BoardController.java:85) - ====================
-[2022-06-28 09:16:14.237] DEBUG BoardController.doRetrieve(BoardController.java:86) - =inVO=SearchVO [pageSize=10, pageNum=1, searchDiv=, searchWord=, div=10, toString()=DTO [num=0, totalCnt=0]]
-[2022-06-28 09:16:14.238] DEBUG BoardController.doRetrieve(BoardController.java:87) - ====================
-[2022-06-28 09:16:14.242] DEBUG AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:370) - Creating new transaction with name [com.pcwk.ehr.board.service.BoardServiceImpl.doRetrieve]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
-[2022-06-28 09:16:14.777] INFO  Log4j2SpyLogDelegator.connectionModified(Log4j2SpyLogDelegator.java:365) -  org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
-1. Connection opened. {executed in 530ms} 
-open connections:  1 (1)
-[2022-06-28 09:16:14.778] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
-1. Connection.new Connection returned 
-[2022-06-28 09:16:14.778] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnectionFactory.initializeConnection(PoolableConnectionFactory.java:597)
-1. Connection.isClosed() returned false
-[2022-06-28 09:16:14.780] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
-1. Connection.getAutoCommit() returned true
-[2022-06-28 09:16:14.780] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.isClosed(DelegatingConnection.java:386)
-1. Connection.isClosed() returned false
-[2022-06-28 09:16:14.781] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
-1. Connection.getAutoCommit() returned true
-[2022-06-28 09:16:14.781] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
-1. Connection.clearWarnings() returned 
-[2022-06-28 09:16:14.781] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
-1. Connection.getAutoCommit() returned true
-[2022-06-28 09:16:14.782] INFO  Log4j2SpyLogDelegator.connectionModified(Log4j2SpyLogDelegator.java:365) -  org.apache.commons.dbcp.DelegatingConnection.close(DelegatingConnection.java:247)
-1. Connection closed. {executed in 1ms} 
-open connections:  none
-[2022-06-28 09:16:14.782] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.close(DelegatingConnection.java:247)
-1. Connection.close() returned 
-[2022-06-28 09:16:14.881] INFO  Log4j2SpyLogDelegator.connectionModified(Log4j2SpyLogDelegator.java:365) -  org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
-2. Connection opened. {executed in 98ms} 
-open connections:  2 (1)
-[2022-06-28 09:16:14.882] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
-2. Connection.new Connection returned 
-[2022-06-28 09:16:14.883] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnectionFactory.initializeConnection(PoolableConnectionFactory.java:597)
-2. Connection.isClosed() returned false
-[2022-06-28 09:16:14.884] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
-2. Connection.getAutoCommit() returned true
-[2022-06-28 09:16:14.885] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
-2. Connection.isClosed() returned false
-[2022-06-28 09:16:14.886] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
-2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@6107165
-[2022-06-28 09:16:14.886] DEBUG DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:267) - Acquired Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] for JDBC transaction
-[2022-06-28 09:16:14.890] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
-2. Connection.isClosed() returned false
-[2022-06-28 09:16:14.890] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
-2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@6107165
-[2022-06-28 09:16:14.890] DEBUG DataSourceUtils.prepareConnectionForTransaction(DataSourceUtils.java:187) - Setting JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] read-only
-[2022-06-28 09:16:14.891] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.setReadOnly(DelegatingConnection.java:377)
-2. Connection.setReadOnly(true) returned 
-[2022-06-28 09:16:14.891] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
-2. Connection.getAutoCommit() returned true
-[2022-06-28 09:16:14.891] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
-2. Connection.isClosed() returned false
-[2022-06-28 09:16:14.892] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
-2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@6107165
-[2022-06-28 09:16:14.892] DEBUG DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:285) - Switching JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] to manual commit
-[2022-06-28 09:16:14.892] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.setAutoCommit(DelegatingConnection.java:371)
-2. Connection.setAutoCommit(false) returned 
-[2022-06-28 09:16:14.893] DEBUG BoardDaoImpl.doRetrieve(BoardDaoImpl.java:58) - ============================
-[2022-06-28 09:16:14.893] DEBUG BoardDaoImpl.doRetrieve(BoardDaoImpl.java:59) - param:SearchVO [pageSize=10, pageNum=1, searchDiv=, searchWord=, div=10, toString()=DTO [num=0, totalCnt=0]]
-[2022-06-28 09:16:14.893] DEBUG BoardDaoImpl.doRetrieve(BoardDaoImpl.java:60) - statement:com.pcwk.ehr.board.doRetrieve
-[2022-06-28 09:16:14.893] DEBUG BoardDaoImpl.doRetrieve(BoardDaoImpl.java:61) - ============================
-[2022-06-28 09:16:14.895] DEBUG Logger.debug(Logger.java:49) - Creating a new SqlSession
-[2022-06-28 09:16:14.904] DEBUG Logger.debug(Logger.java:49) - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cff0139]
-[2022-06-28 09:16:14.929] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
-2. Connection.getAutoCommit() returned false
-[2022-06-28 09:16:14.930] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
-2. Connection.isClosed() returned false
-[2022-06-28 09:16:14.930] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
-2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@6107165
-[2022-06-28 09:16:14.930] DEBUG Logger.debug(Logger.java:49) - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will be managed by Spring
-[2022-06-28 09:16:14.934] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: SELECT A.*, B.* FROM( SELECT TT1.rnum AS num, TT1.seq, TT1.title, TT1.read_cnt AS "readCnt", TT1.div, TT1.mod_id AS "modId", DECODE(TO_CHAR(SYSDATE, 'YYYYMMDD'), TO_CHAR(TT1.mod_dt, 'YYYYMMDD') , TO_CHAR(TT1.mod_dt, 'HH24:MI') , TO_CHAR(TT1.mod_dt, 'YYYY-MM-DD')) AS "modDt" FROM ( SELECT ROWNUM AS RNUM, T1.* FROM ( SELECT * FROM PC_BOARD WHERE seq > 0 AND div = ? ORDER BY MOD_DT DESC )T1 WHERE ROWNUM <= ? * (? - 1) + ? )TT1 WHERE rnum >= ? * (? - 1) + 1 )A CROSS JOIN (SELECT COUNT(*) AS totalCnt FROM PC_BOARD WHERE seq > 0 AND div = ? )B
-[2022-06-28 09:16:15.005] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
-2. PreparedStatement.new PreparedStatement returned 
-[2022-06-28 09:16:15.005] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
-2. Connection.prepareStatement(SELECT A.*, B.*
-		FROM(
-		    SELECT TT1.rnum AS num,
-		        TT1.seq,
-		        TT1.title,
-		        TT1.read_cnt AS "readCnt",
-		        TT1.div,
-		        TT1.mod_id AS "modId",
-		        DECODE(TO_CHAR(SYSDATE, 'YYYYMMDD'), TO_CHAR(TT1.mod_dt, 'YYYYMMDD')
-		            , TO_CHAR(TT1.mod_dt, 'HH24:MI')
-		            , TO_CHAR(TT1.mod_dt, 'YYYY-MM-DD')) AS "modDt"
-		    FROM
-		    (
-		        SELECT ROWNUM AS RNUM, T1.*
-		        FROM
-		        (
-		        SELECT *
-		        FROM PC_BOARD
-		        WHERE seq > 0
-		         
-             
-                  AND div = ?
-                 
-     
-		         
-         
-     
-		        ORDER BY MOD_DT DESC
-		        )T1
-		         WHERE ROWNUM  <= ? * (? - 1) + ? 
-		    )TT1
-		     WHERE rnum >= ? * (? - 1) + 1 
-		)A
-		CROSS JOIN
-		(SELECT COUNT(*) AS totalCnt
-		FROM PC_BOARD
-		WHERE seq > 0
-		 
-             
-                  AND div = ?
-                 
-     
-		 
-         
-     
-		)B) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@23eff5d1
-[2022-06-28 09:16:15.012] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
-2. PreparedStatement.setString(1, "10") returned 
-[2022-06-28 09:16:15.013] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
-2. PreparedStatement.setInt(2, 10) returned 
-[2022-06-28 09:16:15.014] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
-2. PreparedStatement.setInt(3, 1) returned 
-[2022-06-28 09:16:15.014] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
-2. PreparedStatement.setInt(4, 10) returned 
-[2022-06-28 09:16:15.014] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
-2. PreparedStatement.setInt(5, 10) returned 
-[2022-06-28 09:16:15.015] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
-2. PreparedStatement.setInt(6, 1) returned 
-[2022-06-28 09:16:15.015] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
-2. PreparedStatement.setString(7, "10") returned 
-[2022-06-28 09:16:15.016] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: 10(String), 10(Integer), 1(Integer), 10(Integer), 10(Integer), 1(Integer), 10(String)
-[2022-06-28 09:16:15.061] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
-2. SELECT A.*, B.* FROM( SELECT TT1.rnum AS num, TT1.seq, TT1.title, TT1.read_cnt AS "readCnt", 
-TT1.div, TT1.mod_id AS "modId", DECODE(TO_CHAR(SYSDATE, 'YYYYMMDD'), TO_CHAR(TT1.mod_dt, 'YYYYMMDD') 
-, TO_CHAR(TT1.mod_dt, 'HH24:MI') , TO_CHAR(TT1.mod_dt, 'YYYY-MM-DD')) AS "modDt" FROM ( SELECT 
-ROWNUM AS RNUM, T1.* FROM ( SELECT * FROM PC_BOARD WHERE seq > 0 AND div = '10' ORDER BY MOD_DT 
-DESC )T1 WHERE ROWNUM <= 10 * (1 - 1) + 10 )TT1 WHERE rnum >= 10 * (1 - 1) + 1 )A CROSS JOIN 
-(SELECT COUNT(*) AS totalCnt FROM PC_BOARD WHERE seq > 0 AND div = '10' )B  {executed in 44 ms}
-[2022-06-28 09:16:15.062] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
-2. PreparedStatement.execute() returned true
-[2022-06-28 09:16:15.070] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
-2. ResultSet.new ResultSet returned 
-[2022-06-28 09:16:15.071] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
-2. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@2a2ef072
-[2022-06-28 09:16:15.083] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
-2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@320a8ebf
-[2022-06-28 09:16:15.084] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getType(DelegatingResultSet.java:394)
-2. ResultSet.getType() returned 1003
-[2022-06-28 09:16:15.084] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
-2. ResultSet.isClosed() returned false
-[2022-06-28 09:16:15.085] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
-2. ResultSet.next() returned true
-[2022-06-28 09:16:15.086] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(NUM) returned 1
-[2022-06-28 09:16:15.086] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(SEQ) returned 12
-[2022-06-28 09:16:15.087] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(TITLE) returned 제목12
-[2022-06-28 09:16:15.087] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(readCnt) returned 1
-[2022-06-28 09:16:15.088] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(DIV) returned 10
-[2022-06-28 09:16:15.088] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modId) returned admin
-[2022-06-28 09:16:15.088] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modDt) returned 09:15
-[2022-06-28 09:16:15.089] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(TOTALCNT) returned 15
-[2022-06-28 09:16:15.089] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
-2. ResultSet.isClosed() returned false
-[2022-06-28 09:16:15.090] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
-2. ResultSet.next() returned true
-[2022-06-28 09:16:15.090] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(NUM) returned 2
-[2022-06-28 09:16:15.090] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(SEQ) returned 31
-[2022-06-28 09:16:15.091] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(TITLE) returned 제목_31
-[2022-06-28 09:16:15.091] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(readCnt) returned 1
-[2022-06-28 09:16:15.091] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(DIV) returned 10
-[2022-06-28 09:16:15.092] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modId) returned 강사
-[2022-06-28 09:16:15.092] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modDt) returned 09:13
-[2022-06-28 09:16:15.092] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(TOTALCNT) returned 15
-[2022-06-28 09:16:15.093] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
-2. ResultSet.isClosed() returned false
-[2022-06-28 09:16:15.093] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
-2. ResultSet.next() returned true
-[2022-06-28 09:16:15.093] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(NUM) returned 3
-[2022-06-28 09:16:15.094] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(SEQ) returned 30
-[2022-06-28 09:16:15.094] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(TITLE) returned 제목_30
-[2022-06-28 09:16:15.094] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(readCnt) returned 1
-[2022-06-28 09:16:15.095] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(DIV) returned 10
-[2022-06-28 09:16:15.095] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modId) returned 김동호
-[2022-06-28 09:16:15.095] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modDt) returned 09:13
-[2022-06-28 09:16:15.096] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(TOTALCNT) returned 15
-[2022-06-28 09:16:15.096] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
-2. ResultSet.isClosed() returned false
-[2022-06-28 09:16:15.097] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
-2. ResultSet.next() returned true
-[2022-06-28 09:16:15.097] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(NUM) returned 4
-[2022-06-28 09:16:15.098] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(SEQ) returned 15
-[2022-06-28 09:16:15.098] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(TITLE) returned 제목_15
-[2022-06-28 09:16:15.098] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(readCnt) returned 1
-[2022-06-28 09:16:15.099] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(DIV) returned 10
-[2022-06-28 09:16:15.099] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modId) returned 박재홍
-[2022-06-28 09:16:15.100] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modDt) returned 09:13
-[2022-06-28 09:16:15.100] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(TOTALCNT) returned 15
-[2022-06-28 09:16:15.100] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
-2. ResultSet.isClosed() returned false
-[2022-06-28 09:16:15.101] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
-2. ResultSet.next() returned true
-[2022-06-28 09:16:15.101] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(NUM) returned 5
-[2022-06-28 09:16:15.101] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(SEQ) returned 90
-[2022-06-28 09:16:15.102] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(TITLE) returned 제목_090
-[2022-06-28 09:16:15.102] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(readCnt) returned 0
-[2022-06-28 09:16:15.102] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.wasNull(DelegatingResultSet.java:210)
-2. ResultSet.wasNull() returned false
-[2022-06-28 09:16:15.103] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(DIV) returned 10
-[2022-06-28 09:16:15.103] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modId) returned 김태욱
-[2022-06-28 09:16:15.103] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modDt) returned 2022-06-27
-[2022-06-28 09:16:15.103] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(TOTALCNT) returned 15
-[2022-06-28 09:16:15.104] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
-2. ResultSet.isClosed() returned false
-[2022-06-28 09:16:15.104] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
-2. ResultSet.next() returned true
-[2022-06-28 09:16:15.104] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(NUM) returned 6
-[2022-06-28 09:16:15.105] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(SEQ) returned 900
-[2022-06-28 09:16:15.105] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(TITLE) returned 제목_0900
-[2022-06-28 09:16:15.105] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(readCnt) returned 0
-[2022-06-28 09:16:15.106] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.wasNull(DelegatingResultSet.java:210)
-2. ResultSet.wasNull() returned false
-[2022-06-28 09:16:15.106] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(DIV) returned 10
-[2022-06-28 09:16:15.106] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modId) returned 김태욱
-[2022-06-28 09:16:15.106] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modDt) returned 2022-06-27
-[2022-06-28 09:16:15.107] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(TOTALCNT) returned 15
-[2022-06-28 09:16:15.107] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
-2. ResultSet.isClosed() returned false
-[2022-06-28 09:16:15.107] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
-2. ResultSet.next() returned true
-[2022-06-28 09:16:15.108] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(NUM) returned 7
-[2022-06-28 09:16:15.108] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(SEQ) returned 7
-[2022-06-28 09:16:15.108] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(TITLE) returned 제목_05_
-[2022-06-28 09:16:15.109] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(readCnt) returned 0
-[2022-06-28 09:16:15.109] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.wasNull(DelegatingResultSet.java:210)
-2. ResultSet.wasNull() returned false
-[2022-06-28 09:16:15.109] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(DIV) returned 10
-[2022-06-28 09:16:15.109] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modId) returned 강해리_
-[2022-06-28 09:16:15.110] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modDt) returned 2022-06-27
-[2022-06-28 09:16:15.110] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(TOTALCNT) returned 15
-[2022-06-28 09:16:15.110] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
-2. ResultSet.isClosed() returned false
-[2022-06-28 09:16:15.111] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
-2. ResultSet.next() returned true
-[2022-06-28 09:16:15.111] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(NUM) returned 8
-[2022-06-28 09:16:15.111] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(SEQ) returned 19
-[2022-06-28 09:16:15.112] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(TITLE) returned 제목_19
-[2022-06-28 09:16:15.112] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(readCnt) returned 1
-[2022-06-28 09:16:15.112] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(DIV) returned 10
-[2022-06-28 09:16:15.112] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modId) returned 유경환
-[2022-06-28 09:16:15.113] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modDt) returned 2022-06-27
-[2022-06-28 09:16:15.113] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(TOTALCNT) returned 15
-[2022-06-28 09:16:15.114] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
-2. ResultSet.isClosed() returned false
-[2022-06-28 09:16:15.114] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
-2. ResultSet.next() returned true
-[2022-06-28 09:16:15.115] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(NUM) returned 9
-[2022-06-28 09:16:15.115] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(SEQ) returned 26
-[2022-06-28 09:16:15.116] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(TITLE) returned 제목_26
-[2022-06-28 09:16:15.116] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(readCnt) returned 1
-[2022-06-28 09:16:15.116] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(DIV) returned 10
-[2022-06-28 09:16:15.117] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modId) returned 유남1
-[2022-06-28 09:16:15.117] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modDt) returned 2022-06-27
-[2022-06-28 09:16:15.118] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(TOTALCNT) returned 15
-[2022-06-28 09:16:15.118] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
-2. ResultSet.isClosed() returned false
-[2022-06-28 09:16:15.119] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
-2. ResultSet.next() returned true
-[2022-06-28 09:16:15.119] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(NUM) returned 10
-[2022-06-28 09:16:15.120] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(SEQ) returned 14
-[2022-06-28 09:16:15.120] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(TITLE) returned 제목_14
-[2022-06-28 09:16:15.121] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(readCnt) returned 1
-[2022-06-28 09:16:15.121] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(DIV) returned 10
-[2022-06-28 09:16:15.121] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modId) returned admin
-[2022-06-28 09:16:15.122] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
-2. ResultSet.getString(modDt) returned 2022-06-27
-[2022-06-28 09:16:15.122] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
-2. ResultSet.getInt(TOTALCNT) returned 15
-[2022-06-28 09:16:15.123] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
-2. ResultSet.isClosed() returned false
-[2022-06-28 09:16:15.126] INFO  Log4j2SpyLogDelegator.resultSetCollected(Log4j2SpyLogDelegator.java:390) - 
-|----|----|--------|--------|----|------|-----------|---------|
-|num |seq |title   |readcnt |div |modid |moddt      |totalcnt |
-|----|----|--------|--------|----|------|-----------|---------|
-|1   |12  |제목12    |1       |10  |admin |09:15      |15       |
-|2   |31  |제목_31   |1       |10  |강사    |09:13      |15       |
-|3   |30  |제목_30   |1       |10  |김동호   |09:13      |15       |
-|4   |15  |제목_15   |1       |10  |박재홍   |09:13      |15       |
-|5   |90  |제목_090  |0       |10  |김태욱   |2022-06-27 |15       |
-|6   |900 |제목_0900 |0       |10  |김태욱   |2022-06-27 |15       |
-|7   |7   |제목_05_  |0       |10  |강해리_  |2022-06-27 |15       |
-|8   |19  |제목_19   |1       |10  |유경환   |2022-06-27 |15       |
-|9   |26  |제목_26   |1       |10  |유남1   |2022-06-27 |15       |
-|10  |14  |제목_14   |1       |10  |admin |2022-06-27 |15       |
-|----|----|--------|--------|----|------|-----------|---------|
-
-[2022-06-28 09:16:15.127] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
-2. ResultSet.next() returned false
-[2022-06-28 09:16:15.127] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 10
-[2022-06-28 09:16:15.127] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.close(DelegatingResultSet.java:187)
-2. ResultSet.close() returned void
-[2022-06-28 09:16:15.129] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getMetaData(DelegatingConnection.java:345)
-2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@6107165
-[2022-06-28 09:16:15.129] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
-2. PreparedStatement.close() returned 
-[2022-06-28 09:16:15.130] DEBUG Logger.debug(Logger.java:49) - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cff0139]
-[2022-06-28 09:16:15.131] DEBUG BoardDaoImpl.doRetrieve(BoardDaoImpl.java:66) - BoardVO [seq=12, title=제목12, contents=null, readCnt=1, div=10, regDt=null, regId=null, modDt=09:15, modId=admin, toString()=DTO [num=1, totalCnt=15]]
-[2022-06-28 09:16:15.131] DEBUG BoardDaoImpl.doRetrieve(BoardDaoImpl.java:66) - BoardVO [seq=31, title=제목_31, contents=null, readCnt=1, div=10, regDt=null, regId=null, modDt=09:13, modId=강사, toString()=DTO [num=2, totalCnt=15]]
-[2022-06-28 09:16:15.131] DEBUG BoardDaoImpl.doRetrieve(BoardDaoImpl.java:66) - BoardVO [seq=30, title=제목_30, contents=null, readCnt=1, div=10, regDt=null, regId=null, modDt=09:13, modId=김동호, toString()=DTO [num=3, totalCnt=15]]
-[2022-06-28 09:16:15.131] DEBUG BoardDaoImpl.doRetrieve(BoardDaoImpl.java:66) - BoardVO [seq=15, title=제목_15, contents=null, readCnt=1, div=10, regDt=null, regId=null, modDt=09:13, modId=박재홍, toString()=DTO [num=4, totalCnt=15]]
-[2022-06-28 09:16:15.131] DEBUG BoardDaoImpl.doRetrieve(BoardDaoImpl.java:66) - BoardVO [seq=90, title=제목_090, contents=null, readCnt=0, div=10, regDt=null, regId=null, modDt=2022-06-27, modId=김태욱, toString()=DTO [num=5, totalCnt=15]]
-[2022-06-28 09:16:15.131] DEBUG BoardDaoImpl.doRetrieve(BoardDaoImpl.java:66) - BoardVO [seq=900, title=제목_0900, contents=null, readCnt=0, div=10, regDt=null, regId=null, modDt=2022-06-27, modId=김태욱, toString()=DTO [num=6, totalCnt=15]]
-[2022-06-28 09:16:15.131] DEBUG BoardDaoImpl.doRetrieve(BoardDaoImpl.java:66) - BoardVO [seq=7, title=제목_05_, contents=null, readCnt=0, div=10, regDt=null, regId=null, modDt=2022-06-27, modId=강해리_, toString()=DTO [num=7, totalCnt=15]]
-[2022-06-28 09:16:15.131] DEBUG BoardDaoImpl.doRetrieve(BoardDaoImpl.java:66) - BoardVO [seq=19, title=제목_19, contents=null, readCnt=1, div=10, regDt=null, regId=null, modDt=2022-06-27, modId=유경환, toString()=DTO [num=8, totalCnt=15]]
-[2022-06-28 09:16:15.131] DEBUG BoardDaoImpl.doRetrieve(BoardDaoImpl.java:66) - BoardVO [seq=26, title=제목_26, contents=null, readCnt=1, div=10, regDt=null, regId=null, modDt=2022-06-27, modId=유남1, toString()=DTO [num=9, totalCnt=15]]
-[2022-06-28 09:16:15.131] DEBUG BoardDaoImpl.doRetrieve(BoardDaoImpl.java:66) - BoardVO [seq=14, title=제목_14, contents=null, readCnt=1, div=10, regDt=null, regId=null, modDt=2022-06-27, modId=admin, toString()=DTO [num=10, totalCnt=15]]
-[2022-06-28 09:16:15.132] DEBUG Logger.debug(Logger.java:49) - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cff0139]
-[2022-06-28 09:16:15.132] DEBUG Logger.debug(Logger.java:49) - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cff0139]
-[2022-06-28 09:16:15.132] DEBUG Logger.debug(Logger.java:49) - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cff0139]
-[2022-06-28 09:16:15.133] DEBUG AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:740) - Initiating transaction commit
-[2022-06-28 09:16:15.133] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
-2. Connection.isClosed() returned false
-[2022-06-28 09:16:15.133] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
-2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@6107165
-[2022-06-28 09:16:15.133] DEBUG DataSourceTransactionManager.doCommit(DataSourceTransactionManager.java:330) - Committing JDBC transaction on Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver]
-[2022-06-28 09:16:15.134] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.commit(DelegatingConnection.java:334)
-2. Connection.commit() returned 
-[2022-06-28 09:16:15.135] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.setAutoCommit(DelegatingConnection.java:371)
-2. Connection.setAutoCommit(true) returned 
-[2022-06-28 09:16:15.135] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
-2. Connection.isClosed() returned false
-[2022-06-28 09:16:15.135] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
-2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@6107165
-[2022-06-28 09:16:15.135] DEBUG DataSourceUtils.resetConnectionAfterTransaction(DataSourceUtils.java:251) - Resetting read-only flag of JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver]
-[2022-06-28 09:16:15.136] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.setReadOnly(DelegatingConnection.java:377)
-2. Connection.setReadOnly(false) returned 
-[2022-06-28 09:16:15.136] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
-2. Connection.isClosed() returned false
-[2022-06-28 09:16:15.136] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
-2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@6107165
-[2022-06-28 09:16:15.136] DEBUG DataSourceTransactionManager.doCleanupAfterCompletion(DataSourceTransactionManager.java:389) - Releasing JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] after transaction
-[2022-06-28 09:16:15.136] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
-2. Connection.isClosed() returned false
-[2022-06-28 09:16:15.137] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
-2. Connection.getAutoCommit() returned true
-[2022-06-28 09:16:15.137] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
-2. Connection.clearWarnings() returned 
-[2022-06-28 09:16:15.137] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
-2. Connection.getAutoCommit() returned true
-[2022-06-28 09:16:15.141] DEBUG BoardController.doRetrieve(BoardController.java:92) - ====================
-[2022-06-28 09:16:15.141] DEBUG BoardController.doRetrieve(BoardController.java:93) - =jsonString=[{"seq":12,"title":"제목12","readCnt":1,"div":"10","modDt":"09:15","modId":"admin","num":1,"totalCnt":15},{"seq":31,"title":"제목_31","readCnt":1,"div":"10","modDt":"09:13","modId":"강사","num":2,"totalCnt":15},{"seq":30,"title":"제목_30","readCnt":1,"div":"10","modDt":"09:13","modId":"김동호","num":3,"totalCnt":15},{"seq":15,"title":"제목_15","readCnt":1,"div":"10","modDt":"09:13","modId":"박재홍","num":4,"totalCnt":15},{"seq":90,"title":"제목_090","readCnt":0,"div":"10","modDt":"2022-06-27","modId":"김태욱","num":5,"totalCnt":15},{"seq":900,"title":"제목_0900","readCnt":0,"div":"10","modDt":"2022-06-27","modId":"김태욱","num":6,"totalCnt":15},{"seq":7,"title":"제목_05_","readCnt":0,"div":"10","modDt":"2022-06-27","modId":"강해리_","num":7,"totalCnt":15},{"seq":19,"title":"제목_19","readCnt":1,"div":"10","modDt":"2022-06-27","modId":"유경환","num":8,"totalCnt":15},{"seq":26,"title":"제목_26","readCnt":1,"div":"10","modDt":"2022-06-27","modId":"유남1","num":9,"totalCnt":15},{"seq":14,"title":"제목_14","readCnt":1,"div":"10","modDt":"2022-06-27","modId":"admin","num":10,"totalCnt":15}]
-[2022-06-28 09:16:15.141] DEBUG BoardController.doRetrieve(BoardController.java:94) - ====================
-[2022-06-28 09:16:15.152] DEBUG FrameworkServlet.logResult(FrameworkServlet.java:1131) - Completed 200 OK
-[2022-06-28 09:16:15.158] DEBUG JUnitBoardController.doRetrieve(JUnitBoardController.java:114) - ========================
-[2022-06-28 09:16:15.158] DEBUG JUnitBoardController.doRetrieve(JUnitBoardController.java:115) - result : [{"seq":12,"title":"제목12","readCnt":1,"div":"10","modDt":"09:15","modId":"admin","num":1,"totalCnt":15},{"seq":31,"title":"제목_31","readCnt":1,"div":"10","modDt":"09:13","modId":"강사","num":2,"totalCnt":15},{"seq":30,"title":"제목_30","readCnt":1,"div":"10","modDt":"09:13","modId":"김동호","num":3,"totalCnt":15},{"seq":15,"title":"제목_15","readCnt":1,"div":"10","modDt":"09:13","modId":"박재홍","num":4,"totalCnt":15},{"seq":90,"title":"제목_090","readCnt":0,"div":"10","modDt":"2022-06-27","modId":"김태욱","num":5,"totalCnt":15},{"seq":900,"title":"제목_0900","readCnt":0,"div":"10","modDt":"2022-06-27","modId":"김태욱","num":6,"totalCnt":15},{"seq":7,"title":"제목_05_","readCnt":0,"div":"10","modDt":"2022-06-27","modId":"강해리_","num":7,"totalCnt":15},{"seq":19,"title":"제목_19","readCnt":1,"div":"10","modDt":"2022-06-27","modId":"유경환","num":8,"totalCnt":15},{"seq":26,"title":"제목_26","readCnt":1,"div":"10","modDt":"2022-06-27","modId":"유남1","num":9,"totalCnt":15},{"seq":14,"title":"제목_14","readCnt":1,"div":"10","modDt":"2022-06-27","modId":"admin","num":10,"totalCnt":15}]
-[2022-06-28 09:16:15.158] DEBUG JUnitBoardController.doRetrieve(JUnitBoardController.java:116) - ========================
-[2022-06-28 09:16:15.160] DEBUG JUnitBoardController.doRetrieve(JUnitBoardController.java:123) - vo = BoardVO [seq=12, title=제목12, contents=null, readCnt=1, div=10, regDt=null, regId=null, modDt=09:15, modId=admin, toString()=DTO [num=1, totalCnt=15]]
-[2022-06-28 09:16:15.160] DEBUG JUnitBoardController.doRetrieve(JUnitBoardController.java:123) - vo = BoardVO [seq=31, title=제목_31, contents=null, readCnt=1, div=10, regDt=null, regId=null, modDt=09:13, modId=강사, toString()=DTO [num=2, totalCnt=15]]
-[2022-06-28 09:16:15.161] DEBUG JUnitBoardController.doRetrieve(JUnitBoardController.java:123) - vo = BoardVO [seq=30, title=제목_30, contents=null, readCnt=1, div=10, regDt=null, regId=null, modDt=09:13, modId=김동호, toString()=DTO [num=3, totalCnt=15]]
-[2022-06-28 09:16:15.161] DEBUG JUnitBoardController.doRetrieve(JUnitBoardController.java:123) - vo = BoardVO [seq=15, title=제목_15, contents=null, readCnt=1, div=10, regDt=null, regId=null, modDt=09:13, modId=박재홍, toString()=DTO [num=4, totalCnt=15]]
-[2022-06-28 09:16:15.161] DEBUG JUnitBoardController.doRetrieve(JUnitBoardController.java:123) - vo = BoardVO [seq=90, title=제목_090, contents=null, readCnt=0, div=10, regDt=null, regId=null, modDt=2022-06-27, modId=김태욱, toString()=DTO [num=5, totalCnt=15]]
-[2022-06-28 09:16:15.161] DEBUG JUnitBoardController.doRetrieve(JUnitBoardController.java:123) - vo = BoardVO [seq=900, title=제목_0900, contents=null, readCnt=0, div=10, regDt=null, regId=null, modDt=2022-06-27, modId=김태욱, toString()=DTO [num=6, totalCnt=15]]
-[2022-06-28 09:16:15.161] DEBUG JUnitBoardController.doRetrieve(JUnitBoardController.java:123) - vo = BoardVO [seq=7, title=제목_05_, contents=null, readCnt=0, div=10, regDt=null, regId=null, modDt=2022-06-27, modId=강해리_, toString()=DTO [num=7, totalCnt=15]]
-[2022-06-28 09:16:15.161] DEBUG JUnitBoardController.doRetrieve(JUnitBoardController.java:123) - vo = BoardVO [seq=19, title=제목_19, contents=null, readCnt=1, div=10, regDt=null, regId=null, modDt=2022-06-27, modId=유경환, toString()=DTO [num=8, totalCnt=15]]
-[2022-06-28 09:16:15.161] DEBUG JUnitBoardController.doRetrieve(JUnitBoardController.java:123) - vo = BoardVO [seq=26, title=제목_26, contents=null, readCnt=1, div=10, regDt=null, regId=null, modDt=2022-06-27, modId=유남1, toString()=DTO [num=9, totalCnt=15]]
-[2022-06-28 09:16:15.161] DEBUG JUnitBoardController.doRetrieve(JUnitBoardController.java:123) - vo = BoardVO [seq=14, title=제목_14, contents=null, readCnt=1, div=10, regDt=null, regId=null, modDt=2022-06-27, modId=admin, toString()=DTO [num=10, totalCnt=15]]
-[2022-06-28 09:16:15.162] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [90767234] from cache with key [[WebMergedContextConfiguration@5c671d7f testClass = JUnitBoardController, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
-[2022-06-28 09:16:15.162] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@5328a9c1 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
-[2022-06-28 09:16:15.163] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [90767234] from cache with key [[WebMergedContextConfiguration@5c671d7f testClass = JUnitBoardController, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
-[2022-06-28 09:16:15.163] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@5328a9c1 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
-[2022-06-28 09:16:15.163] DEBUG AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestMethod(AbstractDirtiesContextTestExecutionListener.java:108) - After test method: context [DefaultTestContext@49e5f737 testClass = JUnitBoardController, testInstance = com.pcwk.ehr.board.JUnitBoardController@715fb77, testMethod = doRetrieve@JUnitBoardController, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5c671d7f testClass = JUnitBoardController, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
-[2022-06-28 09:16:15.164] DEBUG ServletTestExecutionListener.afterTestMethod(ServletTestExecutionListener.java:166) - Resetting RequestContextHolder for test context [DefaultTestContext@49e5f737 testClass = JUnitBoardController, testInstance = com.pcwk.ehr.board.JUnitBoardController@715fb77, testMethod = doRetrieve@JUnitBoardController, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5c671d7f testClass = JUnitBoardController, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]].
-[2022-06-28 09:16:15.164] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [90767234] from cache with key [[WebMergedContextConfiguration@5c671d7f testClass = JUnitBoardController, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
-[2022-06-28 09:16:15.164] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@5328a9c1 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
-[2022-06-28 09:16:15.165] DEBUG AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestClass(AbstractDirtiesContextTestExecutionListener.java:143) - After test class: context [DefaultTestContext@49e5f737 testClass = JUnitBoardController, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5c671d7f testClass = JUnitBoardController, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false, 'org.springframework.test.context.support.DependencyInjectionTestExecutionListener.reinjectDependencies' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+[2022-06-29 10:46:00.108] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:35) - =======================================
+[2022-06-29 11:03:33.283] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:39) - =======================================
+[2022-06-29 11:03:33.769] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:54) - =======================================
+[2022-06-29 11:03:33.769] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:55) - =responseCode=200
+[2022-06-29 11:03:33.769] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:56) - =======================================
+[2022-06-29 11:03:39.913] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:39) - =======================================
+[2022-06-29 11:03:40.244] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:54) - =======================================
+[2022-06-29 11:03:40.245] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:55) - =responseCode=401
+[2022-06-29 11:03:40.248] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:56) - =======================================
+[2022-06-29 11:07:10.602] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:41) - =======================================
+[2022-06-29 11:07:10.951] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:56) - =responseCode=200
+[2022-06-29 11:07:10.955] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - {
+[2022-06-29 11:07:10.959] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 	"lastBuildDate":"Wed, 29 Jun 2022 11:07:16 +0900",
+[2022-06-29 11:07:10.959] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 	"total":1650257,
+[2022-06-29 11:07:10.960] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 	"start":1,
+[2022-06-29 11:07:10.960] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 	"display":10,
+[2022-06-29 11:07:10.960] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 	"items":[
+[2022-06-29 11:07:10.960] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		{
+[2022-06-29 11:07:10.960] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"title":"취향저격인 <b>신촌<\/b> 술집",
+[2022-06-29 11:07:10.960] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"link":"https:\/\/blog.naver.com\/luu1026?Redirect=Log&logNo=222788296464",
+[2022-06-29 11:07:10.960] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"description":"지난 주에 지인들과 <b>신촌<\/b>으로 쇼핑을 갔다가 술생각이나서 미리 찾아본 <b>신촌<\/b> 술집에 다녀왔어요. 다양한 종류의 세계맥주들을 취향에 맞게 골라 마실 수 있고, 고퀄리티의 안주까지 너무나 만족했던 곳이라... ",
+[2022-06-29 11:07:10.960] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggername":"클릭",
+[2022-06-29 11:07:10.960] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggerlink":"https:\/\/blog.naver.com\/luu1026",
+[2022-06-29 11:07:10.961] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"postdate":"20220625"
+[2022-06-29 11:07:10.961] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		},
+[2022-06-29 11:07:10.961] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		{
+[2022-06-29 11:07:10.961] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"title":"<b>신촌<\/b>호반써밋 아파트 모집소식",
+[2022-06-29 11:07:10.961] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"link":"https:\/\/blog.naver.com\/iopiop_123?Redirect=Log&logNo=222784459571",
+[2022-06-29 11:07:10.961] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"description":"<b>신촌<\/b>호반써밋 아파트 모집소식 서울 내에서도 마용성은 앞으로 투자가치가 뛰어나 많은 사람들이... <b>신촌<\/b>호반써밋 역시 마용성에 해당하는 입지로 더욱 기대가 높은데요. 이번에 모집소식을 알리며 이목이... ",
+[2022-06-29 11:07:10.962] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggername":"올바른 집구경",
+[2022-06-29 11:07:10.962] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggerlink":"https:\/\/blog.naver.com\/iopiop_123",
+[2022-06-29 11:07:10.962] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"postdate":"20220622"
+[2022-06-29 11:07:10.962] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		},
+[2022-06-29 11:07:10.962] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		{
+[2022-06-29 11:07:10.963] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"title":"<b>신촌<\/b> 호반써밋 아파트 모집 정보",
+[2022-06-29 11:07:10.963] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"link":"https:\/\/blog.naver.com\/dotori0431?Redirect=Log&logNo=222734531714",
+[2022-06-29 11:07:10.963] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"description":"<b>신촌<\/b> 호반써밋 아파트 모집 정보 반갑습니다! 안정적인 라이프를 영위하기 위해서 필요한 것이 있다면... 불안정한 경제 상황 속에서 경제적인 공급 가격으로 내 집 마련을 할 수 있는 <b>신촌<\/b> 호반써밋 아파트에... ",
+[2022-06-29 11:07:10.963] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggername":"재개발 재건축 정보나눔",
+[2022-06-29 11:07:10.963] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggerlink":"https:\/\/blog.naver.com\/dotori0431",
+[2022-06-29 11:07:10.964] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"postdate":"20220516"
+[2022-06-29 11:07:10.964] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		},
+[2022-06-29 11:07:10.964] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		{
+[2022-06-29 11:07:10.964] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"title":"[초급매] <b>신촌<\/b>재개발구역 조합원매물",
+[2022-06-29 11:07:10.964] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"link":"https:\/\/blog.naver.com\/junggae2013?Redirect=Log&logNo=222781210606",
+[2022-06-29 11:07:10.964] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"description":"<b>신촌<\/b> 재개발구역 조합원매물 매매가 25500만 전세가 7500만 실투자금 18000만 공동주택가격 21년 8730만... 15일 구역 내 성결교회에서 <b>신촌<\/b>구역 조합설립총회 설개개요 중 뉴스테이안은 가능성이 낮아보이고... ",
+[2022-06-29 11:07:10.964] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggername":"힐타운부동산 032)472-6600",
+[2022-06-29 11:07:10.964] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggerlink":"https:\/\/blog.naver.com\/junggae2013",
+[2022-06-29 11:07:10.964] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"postdate":"20220620"
+[2022-06-29 11:07:10.964] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		},
+[2022-06-29 11:07:10.964] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		{
+[2022-06-29 11:07:10.964] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"title":"<b>신촌<\/b> 호반써밋 아파트 공급소식",
+[2022-06-29 11:07:10.964] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"link":"https:\/\/blog.naver.com\/meirand?Redirect=Log&logNo=222775140251",
+[2022-06-29 11:07:10.965] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"description":"<b>신촌<\/b> 호반써밋 아파트 공급소식 금리 인상과 더불어 경제물가가 높아지고 있지만 오히려 현 시기에는... 이번 <b>신촌<\/b> 호반써밋 공급 소식을 알리며 이목이 집중되고 있습니다. 당 프로젝트는 마포구 염리동에... ",
+[2022-06-29 11:07:10.965] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggername":"꿀벌 집구경",
+[2022-06-29 11:07:10.965] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggerlink":"https:\/\/blog.naver.com\/meirand",
+[2022-06-29 11:07:10.965] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"postdate":"20220616"
+[2022-06-29 11:07:10.965] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		},
+[2022-06-29 11:07:10.965] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		{
+[2022-06-29 11:07:10.965] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"title":"<b>신촌<\/b> 호반써밋 아파트 공급절차",
+[2022-06-29 11:07:10.965] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"link":"https:\/\/blog.naver.com\/runekirby777?Redirect=Log&logNo=222754912871",
+[2022-06-29 11:07:10.965] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"description":"<b>신촌<\/b> 호반써밋 아파트 공급절차 부동산 규제 정책은 관련 시장에 영향을 줄 수밖에 없습니다. 인구가... 이번에 마포구 염리동 일대의 아현 뉴타운개발지역 내 <b>신촌<\/b> 호반써밋에서 모집하는 소식 전해 드리고자... ",
+[2022-06-29 11:07:10.965] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggername":"부동산 메타버스",
+[2022-06-29 11:07:10.965] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggerlink":"https:\/\/blog.naver.com\/runekirby777",
+[2022-06-29 11:07:10.965] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"postdate":"20220601"
+[2022-06-29 11:07:10.965] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		},
+[2022-06-29 11:07:10.965] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		{
+[2022-06-29 11:07:10.965] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"title":"<b>신촌<\/b> 호반써밋 아파트 공급 정보",
+[2022-06-29 11:07:10.965] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"link":"https:\/\/blog.naver.com\/wook8475?Redirect=Log&logNo=222765011842",
+[2022-06-29 11:07:10.966] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"description":"<b>신촌<\/b> 호반써밋 아파트 공급 정보 마포구는 현재 용산, 성동과 함께 서울에서 손꼽히는 지역입니다.... 그 중 2호선 이대역과 인접해 높은 기대감을 얻고 있는 <b>신촌<\/b> 호반써밋의 공급정보를 자세히... ",
+[2022-06-29 11:07:10.966] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggername":"그레이트 부동산 연구소",
+[2022-06-29 11:07:10.966] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggerlink":"https:\/\/blog.naver.com\/wook8475",
+[2022-06-29 11:07:10.966] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"postdate":"20220608"
+[2022-06-29 11:07:10.966] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		},
+[2022-06-29 11:07:10.966] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		{
+[2022-06-29 11:07:10.966] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"title":"<b>신촌<\/b> 호반써밋 이대 아파트 공급안내",
+[2022-06-29 11:07:10.966] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"link":"https:\/\/blog.naver.com\/auction4000?Redirect=Log&logNo=222759682954",
+[2022-06-29 11:07:10.966] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"description":"오늘 살펴볼 <b>신촌<\/b> 호반써밋은 이러한 지역주택조합 공동주택 신축사업으로 추진되는 곳으로 특화... <b>신촌<\/b> 호반써밋 단지 모습을 살펴보면 앞서 조감도에서도 볼 수 있듯이 남측으로 18m 도로, 서측으로 15m... ",
+[2022-06-29 11:07:10.966] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggername":"생생옥션",
+[2022-06-29 11:07:10.966] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggerlink":"https:\/\/blog.naver.com\/auction4000",
+[2022-06-29 11:07:10.966] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"postdate":"20220604"
+[2022-06-29 11:07:10.966] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		},
+[2022-06-29 11:07:10.966] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		{
+[2022-06-29 11:07:10.966] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"title":"또 생각나는 <b>신촌<\/b> 삼겹살 제주돈1848",
+[2022-06-29 11:07:10.966] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"link":"https:\/\/blog.naver.com\/sia855?Redirect=Log&logNo=222791334534",
+[2022-06-29 11:07:10.966] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"description":"날이 갈수록 허해져가는 몸이 걱정스러워서 찾아가봤던 <b>신촌<\/b> 삼겹살 전문점에서 맛좋은 고기로 입맛도... 찾아가보았던 <b>신촌<\/b> 삼겹살로 유명한 제주돈 1848이죠. <b>신촌<\/b>역에서부터 걸어서 5분정도만 가면 만나볼 수... ",
+[2022-06-29 11:07:10.967] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggername":"행복한 시야의 블로그",
+[2022-06-29 11:07:10.967] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggerlink":"https:\/\/blog.naver.com\/sia855",
+[2022-06-29 11:07:10.967] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"postdate":"20220627"
+[2022-06-29 11:07:10.967] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		},
+[2022-06-29 11:07:10.967] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		{
+[2022-06-29 11:07:10.967] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"title":"<b>신촌<\/b> 호반써밋 염리동 공급 정보",
+[2022-06-29 11:07:10.967] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"link":"https:\/\/blog.naver.com\/namimi73?Redirect=Log&logNo=222760061069",
+[2022-06-29 11:07:10.967] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"description":"<b>신촌<\/b> 호반써밋 염리동 공급 정보 서울에서도 마포는 용산, 성동과 함께 최근 급부상한 곳인데요... 예정된 <b>신촌<\/b> 호반써밋의 기대감이 높아지고 있습니다. 서울시 마포구 염리동 일원에 기존에... ",
+[2022-06-29 11:07:10.967] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggername":"빅토리 부동산 소식",
+[2022-06-29 11:07:10.967] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"bloggerlink":"https:\/\/blog.naver.com\/namimi73",
+[2022-06-29 11:07:10.967] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 			"postdate":"20220605"
+[2022-06-29 11:07:10.967] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 		}
+[2022-06-29 11:07:10.967] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - 	]
+[2022-06-29 11:07:10.967] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:66) - }
+[2022-06-29 11:20:35.386] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:41) - =======================================
+[2022-06-29 11:20:35.855] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:55) - =responseCode=200
+[2022-06-29 11:20:35.858] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Naver Open API - blog ::&apos;신촌&apos;</title><link>https://search.naver.com</link><description>Naver Search Result</description><lastBuildDate>Wed, 29 Jun 2022 11:20:41 +0900</lastBuildDate><total>1650357</total><start>1</start><display>10</display><item><title>취향저격인 &lt;b&gt;신촌&lt;/b&gt; 술집</title><link>https://blog.naver.com/luu1026?Redirect=Log&amp;logNo=222788296464</link><description>지난 주에 지인들과 &lt;b&gt;신촌&lt;/b&gt;으로 쇼핑을 갔다가 술생각이나서 미리 찾아본 &lt;b&gt;신촌&lt;/b&gt; 술집에 다녀왔어요. 다양한 종류의 세계맥주들을 취향에 맞게 골라 마실 수 있고, 고퀄리티의 안주까지 너무나 만족했던 곳이라... </description><bloggername>클릭</bloggername><bloggerlink>https://blog.naver.com/luu1026</bloggerlink><postdate>20220625</postdate></item><item><title>&lt;b&gt;신촌&lt;/b&gt;호반써밋 아파트 모집소식</title><link>https://blog.naver.com/iopiop_123?Redirect=Log&amp;logNo=222784459571</link><description>&lt;b&gt;신촌&lt;/b&gt;호반써밋 아파트 모집소식 서울 내에서도 마용성은 앞으로 투자가치가 뛰어나 많은 사람들이... &lt;b&gt;신촌&lt;/b&gt;호반써밋 역시 마용성에 해당하는 입지로 더욱 기대가 높은데요. 이번에 모집소식을 알리며 이목이... </description><bloggername>올바른 집구경</bloggername><bloggerlink>https://blog.naver.com/iopiop_123</bloggerlink><postdate>20220622</postdate></item><item><title>&lt;b&gt;신촌&lt;/b&gt; 호반써밋 아파트 모집 정보</title><link>https://blog.naver.com/dotori0431?Redirect=Log&amp;logNo=222734531714</link><description>&lt;b&gt;신촌&lt;/b&gt; 호반써밋 아파트 모집 정보 반갑습니다! 안정적인 라이프를 영위하기 위해서 필요한 것이 있다면... 불안정한 경제 상황 속에서 경제적인 공급 가격으로 내 집 마련을 할 수 있는 &lt;b&gt;신촌&lt;/b&gt; 호반써밋 아파트에... </description><bloggername>재개발 재건축 정보나눔</bloggername><bloggerlink>https://blog.naver.com/dotori0431</bloggerlink><postdate>20220516</postdate></item><item><title>[초급매] &lt;b&gt;신촌&lt;/b&gt;재개발구역 조합원매물</title><link>https://blog.naver.com/junggae2013?Redirect=Log&amp;logNo=222781210606</link><description>&lt;b&gt;신촌&lt;/b&gt; 재개발구역 조합원매물 매매가 25500만 전세가 7500만 실투자금 18000만 공동주택가격 21년 8730만... 15일 구역 내 성결교회에서 &lt;b&gt;신촌&lt;/b&gt;구역 조합설립총회 설개개요 중 뉴스테이안은 가능성이 낮아보이고... </description><bloggername>힐타운부동산 032)472-6600</bloggername><bloggerlink>https://blog.naver.com/junggae2013</bloggerlink><postdate>20220620</postdate></item><item><title>&lt;b&gt;신촌&lt;/b&gt; 호반써밋 아파트 공급소식</title><link>https://blog.naver.com/meirand?Redirect=Log&amp;logNo=222775140251</link><description>&lt;b&gt;신촌&lt;/b&gt; 호반써밋 아파트 공급소식 금리 인상과 더불어 경제물가가 높아지고 있지만 오히려 현 시기에는... 이번 &lt;b&gt;신촌&lt;/b&gt; 호반써밋 공급 소식을 알리며 이목이 집중되고 있습니다. 당 프로젝트는 마포구 염리동에... </description><bloggername>꿀벌 집구경</bloggername><bloggerlink>https://blog.naver.com/meirand</bloggerlink><postdate>20220616</postdate></item><item><title>&lt;b&gt;신촌&lt;/b&gt; 호반써밋 아파트 공급절차</title><link>https://blog.naver.com/runekirby777?Redirect=Log&amp;logNo=222754912871</link><description>&lt;b&gt;신촌&lt;/b&gt; 호반써밋 아파트 공급절차 부동산 규제 정책은 관련 시장에 영향을 줄 수밖에 없습니다. 인구가... 이번에 마포구 염리동 일대의 아현 뉴타운개발지역 내 &lt;b&gt;신촌&lt;/b&gt; 호반써밋에서 모집하는 소식 전해 드리고자... </description><bloggername>부동산 메타버스</bloggername><bloggerlink>https://blog.naver.com/runekirby777</bloggerlink><postdate>20220601</postdate></item><item><title>&lt;b&gt;신촌&lt;/b&gt; 호반써밋 아파트 공급 정보</title><link>https://blog.naver.com/wook8475?Redirect=Log&amp;logNo=222765011842</link><description>&lt;b&gt;신촌&lt;/b&gt; 호반써밋 아파트 공급 정보 마포구는 현재 용산, 성동과 함께 서울에서 손꼽히는 지역입니다.... 그 중 2호선 이대역과 인접해 높은 기대감을 얻고 있는 &lt;b&gt;신촌&lt;/b&gt; 호반써밋의 공급정보를 자세히... </description><bloggername>그레이트 부동산 연구소</bloggername><bloggerlink>https://blog.naver.com/wook8475</bloggerlink><postdate>20220608</postdate></item><item><title>&lt;b&gt;신촌&lt;/b&gt; 호반써밋 이대 아파트 공급안내</title><link>https://blog.naver.com/auction4000?Redirect=Log&amp;logNo=222759682954</link><description>오늘 살펴볼 &lt;b&gt;신촌&lt;/b&gt; 호반써밋은 이러한 지역주택조합 공동주택 신축사업으로 추진되는 곳으로 특화... &lt;b&gt;신촌&lt;/b&gt; 호반써밋 단지 모습을 살펴보면 앞서 조감도에서도 볼 수 있듯이 남측으로 18m 도로, 서측으로 15m... </description><bloggername>생생옥션</bloggername><bloggerlink>https://blog.naver.com/auction4000</bloggerlink><postdate>20220604</postdate></item><item><title>또 생각나는 &lt;b&gt;신촌&lt;/b&gt; 삼겹살 제주돈1848</title><link>https://blog.naver.com/sia855?Redirect=Log&amp;logNo=222791334534</link><description>날이 갈수록 허해져가는 몸이 걱정스러워서 찾아가봤던 &lt;b&gt;신촌&lt;/b&gt; 삼겹살 전문점에서 맛좋은 고기로 입맛도... 찾아가보았던 &lt;b&gt;신촌&lt;/b&gt; 삼겹살로 유명한 제주돈 1848이죠. &lt;b&gt;신촌&lt;/b&gt;역에서부터 걸어서 5분정도만 가면 만나볼 수... </description><bloggername>행복한 시야의 블로그</bloggername><bloggerlink>https://blog.naver.com/sia855</bloggerlink><postdate>20220627</postdate></item><item><title>&lt;b&gt;신촌&lt;/b&gt; 호반써밋 염리동 공급 정보</title><link>https://blog.naver.com/namimi73?Redirect=Log&amp;logNo=222760061069</link><description>&lt;b&gt;신촌&lt;/b&gt; 호반써밋 염리동 공급 정보 서울에서도 마포는 용산, 성동과 함께 최근 급부상한 곳인데요... 예정된 &lt;b&gt;신촌&lt;/b&gt; 호반써밋의 기대감이 높아지고 있습니다. 서울시 마포구 염리동 일원에 기존에... </description><bloggername>빅토리 부동산 소식</bloggername><bloggerlink>https://blog.naver.com/namimi73</bloggerlink><postdate>20220605</postdate></item></channel></rss>
+[2022-06-29 11:21:19.723] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:41) - =======================================
+[2022-06-29 11:21:20.045] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:55) - =responseCode=200
+[2022-06-29 11:21:20.048] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - {
+[2022-06-29 11:21:20.050] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 	"lastBuildDate":"Wed, 29 Jun 2022 11:21:23 +0900",
+[2022-06-29 11:21:20.050] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 	"total":1650357,
+[2022-06-29 11:21:20.050] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 	"start":1,
+[2022-06-29 11:21:20.051] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 	"display":10,
+[2022-06-29 11:21:20.051] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 	"items":[
+[2022-06-29 11:21:20.051] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		{
+[2022-06-29 11:21:20.051] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"title":"취향저격인 <b>신촌<\/b> 술집",
+[2022-06-29 11:21:20.051] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"link":"https:\/\/blog.naver.com\/luu1026?Redirect=Log&logNo=222788296464",
+[2022-06-29 11:21:20.051] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"description":"지난 주에 지인들과 <b>신촌<\/b>으로 쇼핑을 갔다가 술생각이나서 미리 찾아본 <b>신촌<\/b> 술집에 다녀왔어요. 다양한 종류의 세계맥주들을 취향에 맞게 골라 마실 수 있고, 고퀄리티의 안주까지 너무나 만족했던 곳이라... ",
+[2022-06-29 11:21:20.052] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggername":"클릭",
+[2022-06-29 11:21:20.052] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggerlink":"https:\/\/blog.naver.com\/luu1026",
+[2022-06-29 11:21:20.052] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"postdate":"20220625"
+[2022-06-29 11:21:20.052] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		},
+[2022-06-29 11:21:20.052] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		{
+[2022-06-29 11:21:20.053] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"title":"<b>신촌<\/b>호반써밋 아파트 모집소식",
+[2022-06-29 11:21:20.053] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"link":"https:\/\/blog.naver.com\/iopiop_123?Redirect=Log&logNo=222784459571",
+[2022-06-29 11:21:20.053] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"description":"<b>신촌<\/b>호반써밋 아파트 모집소식 서울 내에서도 마용성은 앞으로 투자가치가 뛰어나 많은 사람들이... <b>신촌<\/b>호반써밋 역시 마용성에 해당하는 입지로 더욱 기대가 높은데요. 이번에 모집소식을 알리며 이목이... ",
+[2022-06-29 11:21:20.053] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggername":"올바른 집구경",
+[2022-06-29 11:21:20.053] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggerlink":"https:\/\/blog.naver.com\/iopiop_123",
+[2022-06-29 11:21:20.053] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"postdate":"20220622"
+[2022-06-29 11:21:20.054] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		},
+[2022-06-29 11:21:20.054] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		{
+[2022-06-29 11:21:20.054] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"title":"<b>신촌<\/b> 호반써밋 아파트 모집 정보",
+[2022-06-29 11:21:20.054] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"link":"https:\/\/blog.naver.com\/dotori0431?Redirect=Log&logNo=222734531714",
+[2022-06-29 11:21:20.054] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"description":"<b>신촌<\/b> 호반써밋 아파트 모집 정보 반갑습니다! 안정적인 라이프를 영위하기 위해서 필요한 것이 있다면... 불안정한 경제 상황 속에서 경제적인 공급 가격으로 내 집 마련을 할 수 있는 <b>신촌<\/b> 호반써밋 아파트에... ",
+[2022-06-29 11:21:20.055] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggername":"재개발 재건축 정보나눔",
+[2022-06-29 11:21:20.055] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggerlink":"https:\/\/blog.naver.com\/dotori0431",
+[2022-06-29 11:21:20.055] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"postdate":"20220516"
+[2022-06-29 11:21:20.055] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		},
+[2022-06-29 11:21:20.055] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		{
+[2022-06-29 11:21:20.055] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"title":"[초급매] <b>신촌<\/b>재개발구역 조합원매물",
+[2022-06-29 11:21:20.055] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"link":"https:\/\/blog.naver.com\/junggae2013?Redirect=Log&logNo=222781210606",
+[2022-06-29 11:21:20.055] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"description":"<b>신촌<\/b> 재개발구역 조합원매물 매매가 25500만 전세가 7500만 실투자금 18000만 공동주택가격 21년 8730만... 15일 구역 내 성결교회에서 <b>신촌<\/b>구역 조합설립총회 설개개요 중 뉴스테이안은 가능성이 낮아보이고... ",
+[2022-06-29 11:21:20.055] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggername":"힐타운부동산 032)472-6600",
+[2022-06-29 11:21:20.055] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggerlink":"https:\/\/blog.naver.com\/junggae2013",
+[2022-06-29 11:21:20.055] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"postdate":"20220620"
+[2022-06-29 11:21:20.055] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		},
+[2022-06-29 11:21:20.055] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		{
+[2022-06-29 11:21:20.055] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"title":"<b>신촌<\/b> 호반써밋 아파트 공급소식",
+[2022-06-29 11:21:20.055] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"link":"https:\/\/blog.naver.com\/meirand?Redirect=Log&logNo=222775140251",
+[2022-06-29 11:21:20.056] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"description":"<b>신촌<\/b> 호반써밋 아파트 공급소식 금리 인상과 더불어 경제물가가 높아지고 있지만 오히려 현 시기에는... 이번 <b>신촌<\/b> 호반써밋 공급 소식을 알리며 이목이 집중되고 있습니다. 당 프로젝트는 마포구 염리동에... ",
+[2022-06-29 11:21:20.056] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggername":"꿀벌 집구경",
+[2022-06-29 11:21:20.056] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggerlink":"https:\/\/blog.naver.com\/meirand",
+[2022-06-29 11:21:20.056] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"postdate":"20220616"
+[2022-06-29 11:21:20.056] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		},
+[2022-06-29 11:21:20.056] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		{
+[2022-06-29 11:21:20.056] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"title":"<b>신촌<\/b> 호반써밋 아파트 공급절차",
+[2022-06-29 11:21:20.056] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"link":"https:\/\/blog.naver.com\/runekirby777?Redirect=Log&logNo=222754912871",
+[2022-06-29 11:21:20.056] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"description":"<b>신촌<\/b> 호반써밋 아파트 공급절차 부동산 규제 정책은 관련 시장에 영향을 줄 수밖에 없습니다. 인구가... 이번에 마포구 염리동 일대의 아현 뉴타운개발지역 내 <b>신촌<\/b> 호반써밋에서 모집하는 소식 전해 드리고자... ",
+[2022-06-29 11:21:20.056] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggername":"부동산 메타버스",
+[2022-06-29 11:21:20.056] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggerlink":"https:\/\/blog.naver.com\/runekirby777",
+[2022-06-29 11:21:20.056] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"postdate":"20220601"
+[2022-06-29 11:21:20.056] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		},
+[2022-06-29 11:21:20.056] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		{
+[2022-06-29 11:21:20.056] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"title":"<b>신촌<\/b> 호반써밋 아파트 공급 정보",
+[2022-06-29 11:21:20.056] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"link":"https:\/\/blog.naver.com\/wook8475?Redirect=Log&logNo=222765011842",
+[2022-06-29 11:21:20.057] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"description":"<b>신촌<\/b> 호반써밋 아파트 공급 정보 마포구는 현재 용산, 성동과 함께 서울에서 손꼽히는 지역입니다.... 그 중 2호선 이대역과 인접해 높은 기대감을 얻고 있는 <b>신촌<\/b> 호반써밋의 공급정보를 자세히... ",
+[2022-06-29 11:21:20.057] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggername":"그레이트 부동산 연구소",
+[2022-06-29 11:21:20.057] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggerlink":"https:\/\/blog.naver.com\/wook8475",
+[2022-06-29 11:21:20.057] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"postdate":"20220608"
+[2022-06-29 11:21:20.057] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		},
+[2022-06-29 11:21:20.057] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		{
+[2022-06-29 11:21:20.057] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"title":"<b>신촌<\/b> 호반써밋 이대 아파트 공급안내",
+[2022-06-29 11:21:20.057] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"link":"https:\/\/blog.naver.com\/auction4000?Redirect=Log&logNo=222759682954",
+[2022-06-29 11:21:20.057] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"description":"오늘 살펴볼 <b>신촌<\/b> 호반써밋은 이러한 지역주택조합 공동주택 신축사업으로 추진되는 곳으로 특화... <b>신촌<\/b> 호반써밋 단지 모습을 살펴보면 앞서 조감도에서도 볼 수 있듯이 남측으로 18m 도로, 서측으로 15m... ",
+[2022-06-29 11:21:20.057] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggername":"생생옥션",
+[2022-06-29 11:21:20.057] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggerlink":"https:\/\/blog.naver.com\/auction4000",
+[2022-06-29 11:21:20.057] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"postdate":"20220604"
+[2022-06-29 11:21:20.057] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		},
+[2022-06-29 11:21:20.057] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		{
+[2022-06-29 11:21:20.057] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"title":"또 생각나는 <b>신촌<\/b> 삼겹살 제주돈1848",
+[2022-06-29 11:21:20.057] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"link":"https:\/\/blog.naver.com\/sia855?Redirect=Log&logNo=222791334534",
+[2022-06-29 11:21:20.057] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"description":"날이 갈수록 허해져가는 몸이 걱정스러워서 찾아가봤던 <b>신촌<\/b> 삼겹살 전문점에서 맛좋은 고기로 입맛도... 찾아가보았던 <b>신촌<\/b> 삼겹살로 유명한 제주돈 1848이죠. <b>신촌<\/b>역에서부터 걸어서 5분정도만 가면 만나볼 수... ",
+[2022-06-29 11:21:20.058] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggername":"행복한 시야의 블로그",
+[2022-06-29 11:21:20.058] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggerlink":"https:\/\/blog.naver.com\/sia855",
+[2022-06-29 11:21:20.058] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"postdate":"20220627"
+[2022-06-29 11:21:20.058] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		},
+[2022-06-29 11:21:20.058] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		{
+[2022-06-29 11:21:20.058] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"title":"<b>신촌<\/b> 호반써밋 염리동 공급 정보",
+[2022-06-29 11:21:20.058] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"link":"https:\/\/blog.naver.com\/namimi73?Redirect=Log&logNo=222760061069",
+[2022-06-29 11:21:20.058] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"description":"<b>신촌<\/b> 호반써밋 염리동 공급 정보 서울에서도 마포는 용산, 성동과 함께 최근 급부상한 곳인데요... 예정된 <b>신촌<\/b> 호반써밋의 기대감이 높아지고 있습니다. 서울시 마포구 염리동 일원에 기존에... ",
+[2022-06-29 11:21:20.058] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggername":"빅토리 부동산 소식",
+[2022-06-29 11:21:20.058] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"bloggerlink":"https:\/\/blog.naver.com\/namimi73",
+[2022-06-29 11:21:20.058] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 			"postdate":"20220605"
+[2022-06-29 11:21:20.058] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 		}
+[2022-06-29 11:21:20.058] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - 	]
+[2022-06-29 11:21:20.058] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:67) - }
+[2022-06-29 11:25:12.817] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:45) - =======================================
+[2022-06-29 11:25:13.137] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:59) - =responseCode=200
+[2022-06-29 11:25:13.139] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - {
+[2022-06-29 11:25:13.140] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 	"lastBuildDate":"Wed, 29 Jun 2022 11:25:13 +0900",
+[2022-06-29 11:25:13.141] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 	"total":1650359,
+[2022-06-29 11:25:13.141] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 	"start":1,
+[2022-06-29 11:25:13.141] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 	"display":10,
+[2022-06-29 11:25:13.141] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 	"items":[
+[2022-06-29 11:25:13.141] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:25:13.141] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"취향저격인 <b>신촌<\/b> 술집",
+[2022-06-29 11:25:13.141] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/luu1026?Redirect=Log&logNo=222788296464",
+[2022-06-29 11:25:13.142] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"지난 주에 지인들과 <b>신촌<\/b>으로 쇼핑을 갔다가 술생각이나서 미리 찾아본 <b>신촌<\/b> 술집에 다녀왔어요. 다양한 종류의 세계맥주들을 취향에 맞게 골라 마실 수 있고, 고퀄리티의 안주까지 너무나 만족했던 곳이라... ",
+[2022-06-29 11:25:13.142] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"클릭",
+[2022-06-29 11:25:13.142] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/luu1026",
+[2022-06-29 11:25:13.142] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220625"
+[2022-06-29 11:25:13.142] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		},
+[2022-06-29 11:25:13.142] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:25:13.143] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"<b>신촌<\/b>호반써밋 아파트 모집소식",
+[2022-06-29 11:25:13.143] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/iopiop_123?Redirect=Log&logNo=222784459571",
+[2022-06-29 11:25:13.143] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"<b>신촌<\/b>호반써밋 아파트 모집소식 서울 내에서도 마용성은 앞으로 투자가치가 뛰어나 많은 사람들이... <b>신촌<\/b>호반써밋 역시 마용성에 해당하는 입지로 더욱 기대가 높은데요. 이번에 모집소식을 알리며 이목이... ",
+[2022-06-29 11:25:13.143] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"올바른 집구경",
+[2022-06-29 11:25:13.143] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/iopiop_123",
+[2022-06-29 11:25:13.143] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220622"
+[2022-06-29 11:25:13.143] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		},
+[2022-06-29 11:25:13.143] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:25:13.144] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"<b>신촌<\/b> 호반써밋 아파트 모집 정보",
+[2022-06-29 11:25:13.144] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/dotori0431?Redirect=Log&logNo=222734531714",
+[2022-06-29 11:25:13.144] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"<b>신촌<\/b> 호반써밋 아파트 모집 정보 반갑습니다! 안정적인 라이프를 영위하기 위해서 필요한 것이 있다면... 불안정한 경제 상황 속에서 경제적인 공급 가격으로 내 집 마련을 할 수 있는 <b>신촌<\/b> 호반써밋 아파트에... ",
+[2022-06-29 11:25:13.144] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"재개발 재건축 정보나눔",
+[2022-06-29 11:25:13.144] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/dotori0431",
+[2022-06-29 11:25:13.144] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220516"
+[2022-06-29 11:25:13.144] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		},
+[2022-06-29 11:25:13.144] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:25:13.144] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"[초급매] <b>신촌<\/b>재개발구역 조합원매물",
+[2022-06-29 11:25:13.144] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/junggae2013?Redirect=Log&logNo=222781210606",
+[2022-06-29 11:25:13.144] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"<b>신촌<\/b> 재개발구역 조합원매물 매매가 25500만 전세가 7500만 실투자금 18000만 공동주택가격 21년 8730만... 15일 구역 내 성결교회에서 <b>신촌<\/b>구역 조합설립총회 설개개요 중 뉴스테이안은 가능성이 낮아보이고... ",
+[2022-06-29 11:25:13.145] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"힐타운부동산 032)472-6600",
+[2022-06-29 11:25:13.145] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/junggae2013",
+[2022-06-29 11:25:13.145] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220620"
+[2022-06-29 11:25:13.145] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		},
+[2022-06-29 11:25:13.145] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:25:13.145] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"<b>신촌<\/b> 호반써밋 아파트 공급소식",
+[2022-06-29 11:25:13.145] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/meirand?Redirect=Log&logNo=222775140251",
+[2022-06-29 11:25:13.145] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"<b>신촌<\/b> 호반써밋 아파트 공급소식 금리 인상과 더불어 경제물가가 높아지고 있지만 오히려 현 시기에는... 이번 <b>신촌<\/b> 호반써밋 공급 소식을 알리며 이목이 집중되고 있습니다. 당 프로젝트는 마포구 염리동에... ",
+[2022-06-29 11:25:13.145] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"꿀벌 집구경",
+[2022-06-29 11:25:13.145] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/meirand",
+[2022-06-29 11:25:13.145] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220616"
+[2022-06-29 11:25:13.145] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		},
+[2022-06-29 11:25:13.145] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:25:13.145] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"<b>신촌<\/b> 호반써밋 아파트 공급절차",
+[2022-06-29 11:25:13.146] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/runekirby777?Redirect=Log&logNo=222754912871",
+[2022-06-29 11:25:13.146] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"<b>신촌<\/b> 호반써밋 아파트 공급절차 부동산 규제 정책은 관련 시장에 영향을 줄 수밖에 없습니다. 인구가... 이번에 마포구 염리동 일대의 아현 뉴타운개발지역 내 <b>신촌<\/b> 호반써밋에서 모집하는 소식 전해 드리고자... ",
+[2022-06-29 11:25:13.146] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"부동산 메타버스",
+[2022-06-29 11:25:13.146] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/runekirby777",
+[2022-06-29 11:25:13.146] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220601"
+[2022-06-29 11:25:13.146] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		},
+[2022-06-29 11:25:13.146] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:25:13.146] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"<b>신촌<\/b> 호반써밋 아파트 공급 정보",
+[2022-06-29 11:25:13.146] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/wook8475?Redirect=Log&logNo=222765011842",
+[2022-06-29 11:25:13.146] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"<b>신촌<\/b> 호반써밋 아파트 공급 정보 마포구는 현재 용산, 성동과 함께 서울에서 손꼽히는 지역입니다.... 그 중 2호선 이대역과 인접해 높은 기대감을 얻고 있는 <b>신촌<\/b> 호반써밋의 공급정보를 자세히... ",
+[2022-06-29 11:25:13.146] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"그레이트 부동산 연구소",
+[2022-06-29 11:25:13.146] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/wook8475",
+[2022-06-29 11:25:13.146] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220608"
+[2022-06-29 11:25:13.146] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		},
+[2022-06-29 11:25:13.146] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:25:13.147] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"<b>신촌<\/b> 호반써밋 이대 아파트 공급안내",
+[2022-06-29 11:25:13.147] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/auction4000?Redirect=Log&logNo=222759682954",
+[2022-06-29 11:25:13.147] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"오늘 살펴볼 <b>신촌<\/b> 호반써밋은 이러한 지역주택조합 공동주택 신축사업으로 추진되는 곳으로 특화... <b>신촌<\/b> 호반써밋 단지 모습을 살펴보면 앞서 조감도에서도 볼 수 있듯이 남측으로 18m 도로, 서측으로 15m... ",
+[2022-06-29 11:25:13.147] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"생생옥션",
+[2022-06-29 11:25:13.147] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/auction4000",
+[2022-06-29 11:25:13.147] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220604"
+[2022-06-29 11:25:13.147] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		},
+[2022-06-29 11:25:13.147] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:25:13.147] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"또 생각나는 <b>신촌<\/b> 삼겹살 제주돈1848",
+[2022-06-29 11:25:13.147] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/sia855?Redirect=Log&logNo=222791334534",
+[2022-06-29 11:25:13.147] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"날이 갈수록 허해져가는 몸이 걱정스러워서 찾아가봤던 <b>신촌<\/b> 삼겹살 전문점에서 맛좋은 고기로 입맛도... 찾아가보았던 <b>신촌<\/b> 삼겹살로 유명한 제주돈 1848이죠. <b>신촌<\/b>역에서부터 걸어서 5분정도만 가면 만나볼 수... ",
+[2022-06-29 11:25:13.147] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"행복한 시야의 블로그",
+[2022-06-29 11:25:13.147] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/sia855",
+[2022-06-29 11:25:13.147] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220627"
+[2022-06-29 11:25:13.147] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		},
+[2022-06-29 11:25:13.147] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:25:13.147] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"<b>신촌<\/b> 호반써밋 염리동 공급 정보",
+[2022-06-29 11:25:13.148] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/namimi73?Redirect=Log&logNo=222760061069",
+[2022-06-29 11:25:13.148] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"<b>신촌<\/b> 호반써밋 염리동 공급 정보 서울에서도 마포는 용산, 성동과 함께 최근 급부상한 곳인데요... 예정된 <b>신촌<\/b> 호반써밋의 기대감이 높아지고 있습니다. 서울시 마포구 염리동 일원에 기존에... ",
+[2022-06-29 11:25:13.148] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"빅토리 부동산 소식",
+[2022-06-29 11:25:13.148] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/namimi73",
+[2022-06-29 11:25:13.148] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220605"
+[2022-06-29 11:25:13.148] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		}
+[2022-06-29 11:25:13.148] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 	]
+[2022-06-29 11:25:13.148] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - }
+[2022-06-29 11:25:13.170] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - item [title=취향저격인 <b>신촌</b> 술집, link=https://blog.naver.com/luu1026?Redirect=Log&logNo=222788296464, description=지난 주에 지인들과 <b>신촌</b>으로 쇼핑을 갔다가 술생각이나서 미리 찾아본 <b>신촌</b> 술집에 다녀왔어요. 다양한 종류의 세계맥주들을 취향에 맞게 골라 마실 수 있고, 고퀄리티의 안주까지 너무나 만족했던 곳이라... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:25:13.171] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - item [title=<b>신촌</b>호반써밋 아파트 모집소식, link=https://blog.naver.com/iopiop_123?Redirect=Log&logNo=222784459571, description=<b>신촌</b>호반써밋 아파트 모집소식 서울 내에서도 마용성은 앞으로 투자가치가 뛰어나 많은 사람들이... <b>신촌</b>호반써밋 역시 마용성에 해당하는 입지로 더욱 기대가 높은데요. 이번에 모집소식을 알리며 이목이... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:25:13.171] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - item [title=<b>신촌</b> 호반써밋 아파트 모집 정보, link=https://blog.naver.com/dotori0431?Redirect=Log&logNo=222734531714, description=<b>신촌</b> 호반써밋 아파트 모집 정보 반갑습니다! 안정적인 라이프를 영위하기 위해서 필요한 것이 있다면... 불안정한 경제 상황 속에서 경제적인 공급 가격으로 내 집 마련을 할 수 있는 <b>신촌</b> 호반써밋 아파트에... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:25:13.171] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - item [title=[초급매] <b>신촌</b>재개발구역 조합원매물, link=https://blog.naver.com/junggae2013?Redirect=Log&logNo=222781210606, description=<b>신촌</b> 재개발구역 조합원매물 매매가 25500만 전세가 7500만 실투자금 18000만 공동주택가격 21년 8730만... 15일 구역 내 성결교회에서 <b>신촌</b>구역 조합설립총회 설개개요 중 뉴스테이안은 가능성이 낮아보이고... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:25:13.171] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - item [title=<b>신촌</b> 호반써밋 아파트 공급소식, link=https://blog.naver.com/meirand?Redirect=Log&logNo=222775140251, description=<b>신촌</b> 호반써밋 아파트 공급소식 금리 인상과 더불어 경제물가가 높아지고 있지만 오히려 현 시기에는... 이번 <b>신촌</b> 호반써밋 공급 소식을 알리며 이목이 집중되고 있습니다. 당 프로젝트는 마포구 염리동에... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:25:13.171] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - item [title=<b>신촌</b> 호반써밋 아파트 공급절차, link=https://blog.naver.com/runekirby777?Redirect=Log&logNo=222754912871, description=<b>신촌</b> 호반써밋 아파트 공급절차 부동산 규제 정책은 관련 시장에 영향을 줄 수밖에 없습니다. 인구가... 이번에 마포구 염리동 일대의 아현 뉴타운개발지역 내 <b>신촌</b> 호반써밋에서 모집하는 소식 전해 드리고자... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:25:13.171] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - item [title=<b>신촌</b> 호반써밋 아파트 공급 정보, link=https://blog.naver.com/wook8475?Redirect=Log&logNo=222765011842, description=<b>신촌</b> 호반써밋 아파트 공급 정보 마포구는 현재 용산, 성동과 함께 서울에서 손꼽히는 지역입니다.... 그 중 2호선 이대역과 인접해 높은 기대감을 얻고 있는 <b>신촌</b> 호반써밋의 공급정보를 자세히... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:25:13.171] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - item [title=<b>신촌</b> 호반써밋 이대 아파트 공급안내, link=https://blog.naver.com/auction4000?Redirect=Log&logNo=222759682954, description=오늘 살펴볼 <b>신촌</b> 호반써밋은 이러한 지역주택조합 공동주택 신축사업으로 추진되는 곳으로 특화... <b>신촌</b> 호반써밋 단지 모습을 살펴보면 앞서 조감도에서도 볼 수 있듯이 남측으로 18m 도로, 서측으로 15m... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:25:13.171] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - item [title=또 생각나는 <b>신촌</b> 삼겹살 제주돈1848, link=https://blog.naver.com/sia855?Redirect=Log&logNo=222791334534, description=날이 갈수록 허해져가는 몸이 걱정스러워서 찾아가봤던 <b>신촌</b> 삼겹살 전문점에서 맛좋은 고기로 입맛도... 찾아가보았던 <b>신촌</b> 삼겹살로 유명한 제주돈 1848이죠. <b>신촌</b>역에서부터 걸어서 5분정도만 가면 만나볼 수... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:25:13.171] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - item [title=<b>신촌</b> 호반써밋 염리동 공급 정보, link=https://blog.naver.com/namimi73?Redirect=Log&logNo=222760061069, description=<b>신촌</b> 호반써밋 염리동 공급 정보 서울에서도 마포는 용산, 성동과 함께 최근 급부상한 곳인데요... 예정된 <b>신촌</b> 호반써밋의 기대감이 높아지고 있습니다. 서울시 마포구 염리동 일원에 기존에... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:26:55.287] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:45) - =======================================
+[2022-06-29 11:26:55.690] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:59) - =responseCode=200
+[2022-06-29 11:26:55.691] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - {
+[2022-06-29 11:26:55.692] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 	"lastBuildDate":"Wed, 29 Jun 2022 11:26:51 +0900",
+[2022-06-29 11:26:55.692] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 	"total":1650369,
+[2022-06-29 11:26:55.692] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 	"start":1,
+[2022-06-29 11:26:55.692] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 	"display":10,
+[2022-06-29 11:26:55.692] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 	"items":[
+[2022-06-29 11:26:55.692] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:26:55.692] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"취향저격인 <b>신촌<\/b> 술집",
+[2022-06-29 11:26:55.692] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/luu1026?Redirect=Log&logNo=222788296464",
+[2022-06-29 11:26:55.692] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"지난 주에 지인들과 <b>신촌<\/b>으로 쇼핑을 갔다가 술생각이나서 미리 찾아본 <b>신촌<\/b> 술집에 다녀왔어요. 다양한 종류의 세계맥주들을 취향에 맞게 골라 마실 수 있고, 고퀄리티의 안주까지 너무나 만족했던 곳이라... ",
+[2022-06-29 11:26:55.692] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"클릭",
+[2022-06-29 11:26:55.692] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/luu1026",
+[2022-06-29 11:26:55.692] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220625"
+[2022-06-29 11:26:55.692] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		},
+[2022-06-29 11:26:55.692] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:26:55.692] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"<b>신촌<\/b>호반써밋 아파트 모집소식",
+[2022-06-29 11:26:55.693] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/iopiop_123?Redirect=Log&logNo=222784459571",
+[2022-06-29 11:26:55.693] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"<b>신촌<\/b>호반써밋 아파트 모집소식 서울 내에서도 마용성은 앞으로 투자가치가 뛰어나 많은 사람들이... <b>신촌<\/b>호반써밋 역시 마용성에 해당하는 입지로 더욱 기대가 높은데요. 이번에 모집소식을 알리며 이목이... ",
+[2022-06-29 11:26:55.693] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"올바른 집구경",
+[2022-06-29 11:26:55.693] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/iopiop_123",
+[2022-06-29 11:26:55.693] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220622"
+[2022-06-29 11:26:55.693] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		},
+[2022-06-29 11:26:55.693] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:26:55.693] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"<b>신촌<\/b> 호반써밋 아파트 모집 정보",
+[2022-06-29 11:26:55.693] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/dotori0431?Redirect=Log&logNo=222734531714",
+[2022-06-29 11:26:55.693] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"<b>신촌<\/b> 호반써밋 아파트 모집 정보 반갑습니다! 안정적인 라이프를 영위하기 위해서 필요한 것이 있다면... 불안정한 경제 상황 속에서 경제적인 공급 가격으로 내 집 마련을 할 수 있는 <b>신촌<\/b> 호반써밋 아파트에... ",
+[2022-06-29 11:26:55.693] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"재개발 재건축 정보나눔",
+[2022-06-29 11:26:55.693] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/dotori0431",
+[2022-06-29 11:26:55.693] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220516"
+[2022-06-29 11:26:55.693] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		},
+[2022-06-29 11:26:55.694] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:26:55.694] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"[초급매] <b>신촌<\/b>재개발구역 조합원매물",
+[2022-06-29 11:26:55.694] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/junggae2013?Redirect=Log&logNo=222781210606",
+[2022-06-29 11:26:55.694] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"<b>신촌<\/b> 재개발구역 조합원매물 매매가 25500만 전세가 7500만 실투자금 18000만 공동주택가격 21년 8730만... 15일 구역 내 성결교회에서 <b>신촌<\/b>구역 조합설립총회 설개개요 중 뉴스테이안은 가능성이 낮아보이고... ",
+[2022-06-29 11:26:55.694] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"힐타운부동산 032)472-6600",
+[2022-06-29 11:26:55.694] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/junggae2013",
+[2022-06-29 11:26:55.694] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220620"
+[2022-06-29 11:26:55.694] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		},
+[2022-06-29 11:26:55.694] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:26:55.694] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"<b>신촌<\/b> 호반써밋 아파트 공급소식",
+[2022-06-29 11:26:55.694] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/meirand?Redirect=Log&logNo=222775140251",
+[2022-06-29 11:26:55.694] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"<b>신촌<\/b> 호반써밋 아파트 공급소식 금리 인상과 더불어 경제물가가 높아지고 있지만 오히려 현 시기에는... 이번 <b>신촌<\/b> 호반써밋 공급 소식을 알리며 이목이 집중되고 있습니다. 당 프로젝트는 마포구 염리동에... ",
+[2022-06-29 11:26:55.694] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"꿀벌 집구경",
+[2022-06-29 11:26:55.694] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/meirand",
+[2022-06-29 11:26:55.695] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220616"
+[2022-06-29 11:26:55.695] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		},
+[2022-06-29 11:26:55.695] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:26:55.695] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"<b>신촌<\/b> 호반써밋 아파트 공급절차",
+[2022-06-29 11:26:55.695] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/runekirby777?Redirect=Log&logNo=222754912871",
+[2022-06-29 11:26:55.695] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"<b>신촌<\/b> 호반써밋 아파트 공급절차 부동산 규제 정책은 관련 시장에 영향을 줄 수밖에 없습니다. 인구가... 이번에 마포구 염리동 일대의 아현 뉴타운개발지역 내 <b>신촌<\/b> 호반써밋에서 모집하는 소식 전해 드리고자... ",
+[2022-06-29 11:26:55.695] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"부동산 메타버스",
+[2022-06-29 11:26:55.695] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/runekirby777",
+[2022-06-29 11:26:55.695] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220601"
+[2022-06-29 11:26:55.695] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		},
+[2022-06-29 11:26:55.695] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:26:55.695] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"<b>신촌<\/b> 호반써밋 아파트 공급 정보",
+[2022-06-29 11:26:55.695] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/wook8475?Redirect=Log&logNo=222765011842",
+[2022-06-29 11:26:55.695] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"<b>신촌<\/b> 호반써밋 아파트 공급 정보 마포구는 현재 용산, 성동과 함께 서울에서 손꼽히는 지역입니다.... 그 중 2호선 이대역과 인접해 높은 기대감을 얻고 있는 <b>신촌<\/b> 호반써밋의 공급정보를 자세히... ",
+[2022-06-29 11:26:55.695] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"그레이트 부동산 연구소",
+[2022-06-29 11:26:55.695] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/wook8475",
+[2022-06-29 11:26:55.696] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220608"
+[2022-06-29 11:26:55.696] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		},
+[2022-06-29 11:26:55.696] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:26:55.696] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"<b>신촌<\/b> 호반써밋 이대 아파트 공급안내",
+[2022-06-29 11:26:55.696] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/auction4000?Redirect=Log&logNo=222759682954",
+[2022-06-29 11:26:55.696] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"오늘 살펴볼 <b>신촌<\/b> 호반써밋은 이러한 지역주택조합 공동주택 신축사업으로 추진되는 곳으로 특화... <b>신촌<\/b> 호반써밋 단지 모습을 살펴보면 앞서 조감도에서도 볼 수 있듯이 남측으로 18m 도로, 서측으로 15m... ",
+[2022-06-29 11:26:55.696] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"생생옥션",
+[2022-06-29 11:26:55.696] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/auction4000",
+[2022-06-29 11:26:55.696] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220604"
+[2022-06-29 11:26:55.696] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		},
+[2022-06-29 11:26:55.696] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:26:55.696] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"또 생각나는 <b>신촌<\/b> 삼겹살 제주돈1848",
+[2022-06-29 11:26:55.696] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/sia855?Redirect=Log&logNo=222791334534",
+[2022-06-29 11:26:55.696] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"날이 갈수록 허해져가는 몸이 걱정스러워서 찾아가봤던 <b>신촌<\/b> 삼겹살 전문점에서 맛좋은 고기로 입맛도... 찾아가보았던 <b>신촌<\/b> 삼겹살로 유명한 제주돈 1848이죠. <b>신촌<\/b>역에서부터 걸어서 5분정도만 가면 만나볼 수... ",
+[2022-06-29 11:26:55.696] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"행복한 시야의 블로그",
+[2022-06-29 11:26:55.696] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/sia855",
+[2022-06-29 11:26:55.697] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220627"
+[2022-06-29 11:26:55.697] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		},
+[2022-06-29 11:26:55.697] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		{
+[2022-06-29 11:26:55.697] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"title":"<b>신촌<\/b> 호반써밋 염리동 공급 정보",
+[2022-06-29 11:26:55.697] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"link":"https:\/\/blog.naver.com\/namimi73?Redirect=Log&logNo=222760061069",
+[2022-06-29 11:26:55.697] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"description":"<b>신촌<\/b> 호반써밋 염리동 공급 정보 서울에서도 마포는 용산, 성동과 함께 최근 급부상한 곳인데요... 예정된 <b>신촌<\/b> 호반써밋의 기대감이 높아지고 있습니다. 서울시 마포구 염리동 일원에 기존에... ",
+[2022-06-29 11:26:55.697] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggername":"빅토리 부동산 소식",
+[2022-06-29 11:26:55.697] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"bloggerlink":"https:\/\/blog.naver.com\/namimi73",
+[2022-06-29 11:26:55.697] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 			"postdate":"20220605"
+[2022-06-29 11:26:55.697] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 		}
+[2022-06-29 11:26:55.697] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - 	]
+[2022-06-29 11:26:55.697] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:71) - }
+[2022-06-29 11:26:55.720] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - Item [title=취향저격인 <b>신촌</b> 술집, link=https://blog.naver.com/luu1026?Redirect=Log&logNo=222788296464, description=지난 주에 지인들과 <b>신촌</b>으로 쇼핑을 갔다가 술생각이나서 미리 찾아본 <b>신촌</b> 술집에 다녀왔어요. 다양한 종류의 세계맥주들을 취향에 맞게 골라 마실 수 있고, 고퀄리티의 안주까지 너무나 만족했던 곳이라... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:26:55.720] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - Item [title=<b>신촌</b>호반써밋 아파트 모집소식, link=https://blog.naver.com/iopiop_123?Redirect=Log&logNo=222784459571, description=<b>신촌</b>호반써밋 아파트 모집소식 서울 내에서도 마용성은 앞으로 투자가치가 뛰어나 많은 사람들이... <b>신촌</b>호반써밋 역시 마용성에 해당하는 입지로 더욱 기대가 높은데요. 이번에 모집소식을 알리며 이목이... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:26:55.720] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - Item [title=<b>신촌</b> 호반써밋 아파트 모집 정보, link=https://blog.naver.com/dotori0431?Redirect=Log&logNo=222734531714, description=<b>신촌</b> 호반써밋 아파트 모집 정보 반갑습니다! 안정적인 라이프를 영위하기 위해서 필요한 것이 있다면... 불안정한 경제 상황 속에서 경제적인 공급 가격으로 내 집 마련을 할 수 있는 <b>신촌</b> 호반써밋 아파트에... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:26:55.720] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - Item [title=[초급매] <b>신촌</b>재개발구역 조합원매물, link=https://blog.naver.com/junggae2013?Redirect=Log&logNo=222781210606, description=<b>신촌</b> 재개발구역 조합원매물 매매가 25500만 전세가 7500만 실투자금 18000만 공동주택가격 21년 8730만... 15일 구역 내 성결교회에서 <b>신촌</b>구역 조합설립총회 설개개요 중 뉴스테이안은 가능성이 낮아보이고... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:26:55.720] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - Item [title=<b>신촌</b> 호반써밋 아파트 공급소식, link=https://blog.naver.com/meirand?Redirect=Log&logNo=222775140251, description=<b>신촌</b> 호반써밋 아파트 공급소식 금리 인상과 더불어 경제물가가 높아지고 있지만 오히려 현 시기에는... 이번 <b>신촌</b> 호반써밋 공급 소식을 알리며 이목이 집중되고 있습니다. 당 프로젝트는 마포구 염리동에... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:26:55.720] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - Item [title=<b>신촌</b> 호반써밋 아파트 공급절차, link=https://blog.naver.com/runekirby777?Redirect=Log&logNo=222754912871, description=<b>신촌</b> 호반써밋 아파트 공급절차 부동산 규제 정책은 관련 시장에 영향을 줄 수밖에 없습니다. 인구가... 이번에 마포구 염리동 일대의 아현 뉴타운개발지역 내 <b>신촌</b> 호반써밋에서 모집하는 소식 전해 드리고자... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:26:55.720] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - Item [title=<b>신촌</b> 호반써밋 아파트 공급 정보, link=https://blog.naver.com/wook8475?Redirect=Log&logNo=222765011842, description=<b>신촌</b> 호반써밋 아파트 공급 정보 마포구는 현재 용산, 성동과 함께 서울에서 손꼽히는 지역입니다.... 그 중 2호선 이대역과 인접해 높은 기대감을 얻고 있는 <b>신촌</b> 호반써밋의 공급정보를 자세히... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:26:55.720] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - Item [title=<b>신촌</b> 호반써밋 이대 아파트 공급안내, link=https://blog.naver.com/auction4000?Redirect=Log&logNo=222759682954, description=오늘 살펴볼 <b>신촌</b> 호반써밋은 이러한 지역주택조합 공동주택 신축사업으로 추진되는 곳으로 특화... <b>신촌</b> 호반써밋 단지 모습을 살펴보면 앞서 조감도에서도 볼 수 있듯이 남측으로 18m 도로, 서측으로 15m... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:26:55.720] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - Item [title=또 생각나는 <b>신촌</b> 삼겹살 제주돈1848, link=https://blog.naver.com/sia855?Redirect=Log&logNo=222791334534, description=날이 갈수록 허해져가는 몸이 걱정스러워서 찾아가봤던 <b>신촌</b> 삼겹살 전문점에서 맛좋은 고기로 입맛도... 찾아가보았던 <b>신촌</b> 삼겹살로 유명한 제주돈 1848이죠. <b>신촌</b>역에서부터 걸어서 5분정도만 가면 만나볼 수... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-29 11:26:55.720] DEBUG NaverBlogSearch.main(NaverBlogSearch.java:79) - Item [title=<b>신촌</b> 호반써밋 염리동 공급 정보, link=https://blog.naver.com/namimi73?Redirect=Log&logNo=222760061069, description=<b>신촌</b> 호반써밋 염리동 공급 정보 서울에서도 마포는 용산, 성동과 함께 최근 급부상한 곳인데요... 예정된 <b>신촌</b> 호반써밋의 기대감이 높아지고 있습니다. 서울시 마포구 염리동 일원에 기존에... , bloggerName=null, bloggerLink=null, postDate=null, toString()=DTO [num=0, totalCnt=0]]
