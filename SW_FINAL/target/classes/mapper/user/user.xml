@@ -2,8 +2,24 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.pcwk.ehr.user">
     
-    
-    
+    <!-- 등급별 회원 수 -->
+    <select id="levelPerMemberCnt" resultType="LevelChartVO">
+        WITH W_MEM AS (
+		    SELECT U_LEVEL
+		    FROM HR_MEMBER
+		)
+		SELECT SUM(DECODE(U_LEVEL, 1, 1, 0)) levelCount,
+		    'BASIC' AS levelName
+		FROM W_MEM
+		UNION ALL
+		SELECT SUM(DECODE(U_LEVEL, 2, 1, 0)) levelCount,
+		    'SILVER' AS levelName
+		FROM W_MEM
+		UNION ALL
+		SELECT SUM(DECODE(U_LEVEL, 3, 1, 0)) levelCount,
+		    'GOLD' AS levelName
+		FROM W_MEM
+    </select>
     
     <!-- 10:uId, 20:name, 30:email -->
     <sql id="searchCondition">

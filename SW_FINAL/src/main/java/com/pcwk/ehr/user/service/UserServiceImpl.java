@@ -14,6 +14,7 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 
 import com.pcwk.ehr.TestUserServiceException;
+import com.pcwk.ehr.chart.domain.LevelChartVO;
 import com.pcwk.ehr.cmn.DTO;
 import com.pcwk.ehr.cmn.MessageVO;
 import com.pcwk.ehr.user.dao.UserDao;
@@ -209,5 +210,11 @@ public class UserServiceImpl implements UserService {
 		message.setMsgContents(inVO.getuId() + "의 아이디, 비번이 확인되었습니다.");
 		
 		return message;
+	}
+
+	@Override
+	public List<LevelChartVO> levelPerMemberCnt() throws SQLException {
+		// TODO Auto-generated method stub
+		return userDao.levelPerMemberCnt();
 	}
 }

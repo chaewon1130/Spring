@@ -10,6 +10,7 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.pcwk.ehr.chart.domain.LevelChartVO;
 import com.pcwk.ehr.cmn.DTO;
 import com.pcwk.ehr.cmn.SearchVO;
 import com.pcwk.ehr.user.domain.Level;
@@ -194,6 +195,17 @@ public class UserDaoImpl implements UserDao {
 		int count = sqlSessionTemplate.selectOne(statement, inVO);
 		LOG.debug("count:" + count);
 		return count;
+	}
+
+	@Override
+	public List<LevelChartVO> levelPerMemberCnt() throws SQLException {
+		String statement = NAMESPACE + ".levelPerMemberCnt";
+		LOG.debug("============================");
+		LOG.debug("statement:" + statement);
+		LOG.debug("============================");
+		List<LevelChartVO> list = sqlSessionTemplate.selectList(statement);
+		
+		return list;
 	}
 
 }

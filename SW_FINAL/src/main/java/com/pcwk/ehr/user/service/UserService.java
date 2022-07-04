@@ -3,11 +3,19 @@ package com.pcwk.ehr.user.service;
 import java.sql.SQLException;
 import java.util.List;
 
+import com.pcwk.ehr.chart.domain.LevelChartVO;
 import com.pcwk.ehr.cmn.DTO;
 import com.pcwk.ehr.cmn.MessageVO;
 import com.pcwk.ehr.user.domain.UserVO;
 
 public interface UserService {
+	
+	/**
+	 * 등급별 카운트
+	 * @return List<LevelChartVO>
+	 * @throws SQLException
+	 */
+	public List<LevelChartVO> levelPerMemberCnt() throws SQLException;
 	
 	/**
 	 * 아이디, 비번확인
@@ -23,7 +31,7 @@ public interface UserService {
 	 * @return 1(아이디비번 일치) / 0(아이디비번 불일치)
 	 * @throws SQLException
 	 */
-	int passCheck(UserVO inVO) throws SQLException;
+	public int passCheck(UserVO inVO) throws SQLException;
 	
 	/**
 	 * id중복 체크

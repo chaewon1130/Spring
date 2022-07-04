@@ -15,6 +15,16 @@
         <put-attribute name="footer" value="/WEB-INF/views/tiles/template/footer.jsp"></put-attribute>
     </definition>
     
+    <!-- 네이버블로그.do -->
+    <definition name="blog/*" extends="base-definition">
+        <put-attribute name="title" value="네이버블로그"/>
+        <put-attribute name="body" value="/WEB-INF/views/blog/{1}.jsp"/>
+    </definition>
+    <!-- 차트.do -->
+    <definition name="chart/*" extends="base-definition">
+        <put-attribute name="title" value="차트"/>
+        <put-attribute name="body" value="/WEB-INF/views/chart/{1}.jsp"/>
+    </definition>
     <!-- hello.do -->
     <definition name="hello/*" extends="base-definition">
         <put-attribute name="title" value="헬로"/>
@@ -30,4 +40,5 @@
         <put-attribute name="title" value="회원관리"/>
         <put-attribute name="body" value="/WEB-INF/views/user/{1}.jsp"/>
     </definition>
+    
 </tiles-definitions>

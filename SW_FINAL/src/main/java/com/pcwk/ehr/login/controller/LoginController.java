@@ -51,6 +51,21 @@ public class LoginController {
 		LOG.debug("========================");
 	}
 	
+	@RequestMapping(value="/doLogout.do")
+	public String doLogout(HttpSession session) throws SQLException {
+		LOG.debug("========================");
+		LOG.debug("=doLogout()=");
+		LOG.debug("========================");
+		
+		if(session.getAttribute("user") != null) {
+			session.removeAttribute("user");
+			session.invalidate();
+		}
+		
+		return "main/main";
+	}
+	
+	
 	@RequestMapping(value="/doLogin.do", method=RequestMethod.POST
 			, produces = "application/json;charset=UTF-8")
 	@ResponseBody

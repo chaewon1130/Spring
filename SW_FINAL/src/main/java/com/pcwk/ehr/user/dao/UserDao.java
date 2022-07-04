@@ -5,10 +5,18 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
+import com.pcwk.ehr.chart.domain.LevelChartVO;
 import com.pcwk.ehr.cmn.DTO;
 import com.pcwk.ehr.user.domain.UserVO;
 
 public interface UserDao {
+	
+	/**
+	 * 등급별 카운트
+	 * @return List<LevelChartVO>
+	 * @throws SQLException
+	 */
+	List<LevelChartVO> levelPerMemberCnt() throws SQLException;
 	
 	/**
 	 * 비번확인 체크
