@@ -17,6 +17,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
 <!-- /ehr -->
 <c:set var="CP" value="${pageContext.request.contextPath}"/>
@@ -31,7 +32,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="${CP}/favicon.ico">
 	<!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
-    <title>로그인</title>
+    <title><spring:message code="message.user.login.title"/></title>
     
     <!-- 부트스트랩 -->
     <link href="${CP_RES}/css/bootstrap.min.css" rel="stylesheet">
@@ -102,8 +103,8 @@
 	        <input type="button" id="doLogin" class="btn btn-primary btn-sm" value="로그인">
 	    </div>
 	    <form action="${CP}/login/doLogin.do" method="post">
-	        ID : <input type="text" name="uId" id="uId">
-	        Password : <input type="password" name="passwd" id="passwd"><br>
+	        ID : <input type="text" name="uId" id="uId" placeholder='<spring:message code="message.user.login.id"/>'>
+	        Password : <input type="password" name="passwd" id="passwd"  placeholder='<spring:message code="message.user.login.password"/>'><br>
 	    </form>
     </div>
 </body>
